@@ -129,9 +129,17 @@ body {
 
 .order_collect {
   max-width: 48rem;
+  display: grid;
+  grid-template-rows: 15% 40% 55%;
+  margin: 0 auto;
+}
+
+.order_collect-line1 {
+  grid-row: 1/2;
 }
 
 .suborder_collect {
+  grid-row: 2/3;
   display: grid;
   grid-template-columns: 65% 35%;
 }
@@ -140,4 +148,92 @@ body {
   grid-column: 1/2;
   display: flex;
   flex-direction: column;
+}
+
+.suborder_buttons {
+  grid-row: 3/4;
+}
+
+.leaveOrder {
+  min-width: 268px;
+  height: 74px;
+  background-color: #BD7048;
+  border: none;
+  color: white;
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  cursor: pointer;
+}
+.leaveOrder:hover {
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+.leaveOrder a {
+  text-decoration: none;
+  color: white;
+}
+.leaveOrder a:hover {
+  color: #9FA28A;
+  opacity: 0.8;
+}
+
+.pay {
+  min-width: 268px;
+  height: 74px;
+  background-color: #FFDBC9;
+  border: none;
+  color: #BD7048;
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  cursor: pointer;
+}
+.pay:hover {
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+.pay a {
+  text-decoration: none;
+  color: white;
+}
+.pay a:hover {
+  color: #9FA28A;
+  opacity: 0.8;
+}
+
+.payByParts {
+  min-width: 268px;
+  height: 74px;
+  background-color: #F14635;
+  border: none;
+  color: white;
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  cursor: pointer;
+}
+.payByParts:hover {
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+.payByParts a {
+  text-decoration: none;
+  color: white;
+}
+.payByParts a:hover {
+  color: #9FA28A;
+  opacity: 0.8;
 }/*# sourceMappingURL=check_out.css.map */

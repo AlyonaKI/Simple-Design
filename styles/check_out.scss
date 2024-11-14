@@ -17,7 +17,6 @@ $inactive-checkout-color: rgba(37, 37, 37, 0.5);
 $page-background: #E5E5E5;
 
 
-
 @mixin button($button-text-color,
     $secondary-font-size,
     $subheading-font-weight,
@@ -185,9 +184,17 @@ body {
 
 .order_collect {
     max-width: 48rem;
+    display: grid;
+    grid-template-rows: 15% 40% 55%;
+    margin: 0 auto;
+}
+
+.order_collect-line1 {
+    grid-row: 1/2;
 }
 
 .suborder_collect {
+    grid-row: 2/3;
     display: grid;
     grid-template-columns: 65% 35%;
 }
@@ -196,4 +203,102 @@ body {
     grid-column: 1/2;
     display: flex;
     flex-direction: column;
+}
+
+.suborder_buttons {
+    grid-row: 3/4;
+}
+
+.leaveOrder {
+    min-width: 268px;
+    height: 74px;
+    background-color: $primary-color;
+    border: none;
+    color: $button-text-color;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: $main-font;
+    font-weight: $main-font-weight;
+    font-size: $secondary-font-size;
+    cursor: pointer;
+
+    &:hover {
+        color: rgba(0, 0, 0, 0.5);
+        opacity: 0.8;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: #9FA28A;
+        opacity: 0.8;
+    }
+
+}
+
+.pay {
+    min-width: 268px;
+    height: 74px;
+    background-color: $secondary-button-color;
+    border: none;
+    color: $primary-color;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: $main-font;
+    font-weight: $main-font-weight;
+    font-size: $secondary-font-size;
+    cursor: pointer;
+
+    &:hover {
+        color: rgba(0, 0, 0, 0.5);
+        opacity: 0.8;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: #9FA28A;
+        opacity: 0.8;
+    }
+}
+
+.payByParts {
+    min-width: 268px;
+    height: 74px;
+    background-color: $third-button-color;
+    border: none;
+    color: $button-text-color;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: $main-font;
+    font-weight: $main-font-weight;
+    font-size: $secondary-font-size;
+    cursor: pointer;
+
+    &:hover {
+        color: rgba(0, 0, 0, 0.5);
+        opacity: 0.8;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: #9FA28A;
+        opacity: 0.8;
+    }
 }

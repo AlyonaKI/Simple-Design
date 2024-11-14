@@ -125,4 +125,19 @@ body {
   color: black;
   cursor: pointer;
   text-decoration: none;
+}
+
+.order_collect {
+  max-width: 48rem;
+}
+
+.suborder_collect {
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+
+.colLeft {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=check_out.css.map */

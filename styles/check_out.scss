@@ -90,12 +90,18 @@ body {
     margin: 0 auto;
 }
 
-.order-title {
+.order-title,
+.extras-title,
+.styles-title {
     font-size: $subheading-font-size;
+    font-weight: $subheading-font-weight;
 }
 
-.option_plan-subtitle {
+.option_plan-subtitle,
+.first_title-subtitle {
     color: $primary-color;
+    font-weight: $subheading-font-weight;
+    font-size: $main-font-size;
 }
 
 .option_project {
@@ -107,11 +113,32 @@ body {
 .option_project-title {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     font-size: $main-font_size;
 }
 
-.option_plan-details {
-    font-size: $secondary-font_size
+.option_plan-details,
+.option_first-details {
+    font-size: $secondary-font-size;
+    color: $inactive-checkout-color;
+}
+
+.extras_option-first {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tender {
+    display: flex;
+    flex-direction: column;
+    min-width: 22rem;
+}
+
+.option_first-title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
 }
 
 .body_container-pay {
@@ -129,4 +156,31 @@ body {
 .body_container-styles {
     grid-column: 1/3;
     grid-row: 4/5;
+    padding-left: 10rem;
+
+}
+
+
+
+.styles-title {
+    grid-column: 2/3;
+}
+
+.styles_options {
+    font-size: $main-font-size;
+}
+
+.option {
+    color: $inactive-checkout-color;
+}
+
+.delete {
+    color: $primary-color;
+    cursor: pointer;
+}
+
+.change {
+    color: $main-color;
+    cursor: pointer;
+    text-decoration: none;
 }

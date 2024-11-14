@@ -18,12 +18,10 @@ $page-background: #E5E5E5;
 
 
 
-@mixin button(
-  $button-text-color,
+@mixin button($button-text-color,
   $secondary-font-size,
   $subheading-font-weight,
-  $primary-color
-) {
+  $primary-color) {
   min-width: 268px;
   height: 74px;
   background-color: $primary-color;

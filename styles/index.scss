@@ -1,0 +1,206 @@
+@import "_variables";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: $main-font;
+  font-size: $main-font-size;
+}
+
+.header {
+  font-weight: $subheading-font-weight;
+  font-size: 0.75rem; //15px
+  box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
+  .header_container {
+    padding: 2rem 5rem; //40px 100px
+    display: flex;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+    }
+
+    .header_logo {
+      a {
+        span:nth-of-type(1) {
+          color: $main-color;
+        }
+        span:nth-of-type(2) {
+          color: $primary-color;
+        }
+        span:nth-of-type(3) {
+          font-weight: $main-font-weight;
+          color: $main-color;
+          font-size: 0.5rem; //10px
+        }
+      }
+    }
+
+    .haeder_nav-list {
+      display: flex;
+      list-style: none;
+      font-weight: $main-font-weight;
+      li {
+        //color: rgb(0, 0, 0, 0.5);
+        padding: 0.4rem 1rem; //8px 20px
+        a {
+          color: rgb(0, 0, 0, 0.5);
+        }
+      }
+      .header_nav-link {
+        padding-bottom: 0.6rem; //12px
+        position: relative;
+        transition: color 0.3s ease;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 25%;
+          width: 50%;
+          height: 0.1rem; //2px
+          background-color: $primary-color;
+          transform: translateX(50%);
+          transition: opacity 0.3s ease;
+          opacity: 0;
+        }
+        &.active {
+          color: $primary-color;
+          font-weight: $subheading-font-weight;
+        }
+        &.active::after {
+          opacity: 1;
+        }
+        &:hover {
+          color: $primary-color;
+        }
+        &:hover::after {
+          opacity: 1;
+        }
+      }
+    }
+
+    .header_contact {
+      display: flex;
+      .header_contact-icon {
+        padding-top: 0.2rem; //4px
+        padding-right: 1rem; //20px
+      }
+      .header_contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        a {
+          font-weight: $subheading-font-weight;
+          color: #3b3b3b;
+        }
+        a:hover {
+          color: $primary-color;
+        }
+        p {
+          font-weight: 500;
+          color: rgba(59, 59, 59, 0.5);
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  font-size: 0.75rem; //15px
+  font-weight: $subheading-font-weight;
+  box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
+  .footer_container {
+    padding: 2rem 5rem; //40px 100px
+    display: flex;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+    }
+
+    .footer_logo {
+      a {
+        span:nth-of-type(1) {
+          color: $main-color;
+        }
+        span:nth-of-type(2) {
+          color: $primary-color;
+        }
+        span:nth-of-type(3) {
+          font-weight: $main-font-weight;
+          color: $main-color;
+          font-size: 0.5rem; //10px
+        }
+      }
+    }
+
+    .footer_nav-list {
+      list-style: none;
+      font-weight: $main-font-weight;
+      li {
+        padding-bottom: 0.4rem; //8px
+        a {
+          color: rgba(33, 33, 33, 0.5);
+        }
+      }
+      .footer_nav-link {
+        &.active {
+          color: $primary-color;
+          font-weight: $subheading-font-weight;
+        }
+        &.active::after {
+          opacity: 1;
+        }
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .footer-policy {
+      font-weight: 500;
+      li {
+        list-style: none;
+        a {
+          color: rgba(33, 33, 33, 0.5);
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .footer_contact {
+      display: flex;
+      .footer_contact-icon {
+        padding-top: 0.2rem; //4px
+        padding-right: 1rem; //20px
+      }
+      .footer_contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        a {
+          font-weight: $subheading-font-weight;
+          color: #3b3b3b;
+        }
+        a:hover {
+          color: $primary-color;
+        }
+        p {
+          font-weight: 500;
+          color: rgba(59, 59, 59, 0.5);
+        }
+      }
+    }
+  }
+
+  .footer__copyright {
+    height: 4.8rem; //96px
+    background-color: #262626;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

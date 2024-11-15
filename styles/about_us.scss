@@ -1,6 +1,104 @@
 @import "_variables.scss";
 
 body {
+    width: 100%;
+    margin: 0 auto;
     font-family: $main-font;
     font-size: $main-font-size;
+    background-color: $page-background;
+}
+
+header, .team-pictures, video {
+    margin: 0;
+}
+
+span {
+    color: $primary-color;
+}
+
+.banner {
+    // max-width: 940px;
+    text-align: center;
+
+        h1 {
+            padding: 0 10rem;
+            font-size: 2.5rem;
+            font-weight: $medium-font-weight;
+        } 
+        
+        .banner_image {
+            width: 100%;
+            height: 33rem;
+            background-image: url(../images/about_us/group_banner.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+}
+
+.concepts {
+    max-height: 430px;
+    max-width: 65rem;
+    min-width: 1200px;
+    margin-right: 0;
+    margin-left: auto;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 45% 1fr;
+    column-gap: 3rem;
+    align-items: center;
+
+    .concepts_subheading {
+        margin: 0;
+        align-self: end;
+    }
+
+    p {
+        font-size: 1rem;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    div {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+}
+
+h2 {
+    font-weight: $main-font-weight;
+    font-size: 2.1rem;
+}
+
+h3 {
+    font-size: $main-font-size;
+    font-weight: $main-font-weight;
+    color: $subheading-color;
+}
+
+.founder {
+    max-height: 460px;
+    max-width: 65rem;
+    min-width: 1200px;
+    margin-right: 0;
+    margin-left: auto;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 3rem;
+    align-items: center;
+
+    .founder_image {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+    }
+
+    p, ul {
+        font-size: 1rem;
+    }
+}
+
+video {
+    max-width: 100%;
 }

@@ -21,8 +21,8 @@ $page-background: #E5E5E5;
     $secondary-font-size,
     $subheading-font-weight,
     $primary-color) {
-    min-width: 268px;
-    height: 74px;
+    min-width: 421px;
+    height: 64px;
     background-color: $primary-color;
     border: none;
     color: $button-text-color;
@@ -182,36 +182,80 @@ body {
     text-decoration: none;
 }
 
+.body_container-pay {
+    display: grid;
+    grid-template-rows: 13% 75% 12%;
+    grid-template-columns: 20% 60% 20%;
+}
+
 .order_collect {
+    grid-row: 2/3;
+    grid-column: 2/3;
     max-width: 48rem;
     display: grid;
     grid-template-rows: 15% 40% 55%;
     margin: 0 auto;
+    gap: 3rem;
 }
 
 .order_collect-line1 {
     grid-row: 1/2;
+    font-size: $main-font-size;
+    font-weight: $subheading-font-weight;
+    color: $main-color;
 }
 
 .suborder_collect {
     grid-row: 2/3;
-    display: grid;
-    grid-template-columns: 65% 35%;
 }
+
 
 .colLeft {
     grid-column: 1/2;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    // flex-direction: column;
+    color: $primary-color;
+    font-size: $main-font-size;
+    font-family: $main-font;
+}
+
+.line1,
+.line2,
+.line3,
+.line4,
+.line5 {
+    display: flex;
+    justify-content: space-between;
+    max-height: 3.5rem;
+}
+
+.price {
+    color: $text-color;
+}
+
+.line5 {
+    color: $main-color;
+    font-size: $main-font-size;
+    font-weight: $subheading-font-weight;
+}
+
+.suborder {
+    grid-row: 3/4;
+
 }
 
 .suborder_buttons {
     grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .leaveOrder {
-    min-width: 268px;
-    height: 74px;
+    min-width: 421px;
+    height: 64px;
     background-color: $primary-color;
     border: none;
     color: $button-text-color;
@@ -242,8 +286,8 @@ body {
 }
 
 .pay {
-    min-width: 268px;
-    height: 74px;
+    min-width: 421px;
+    height: 64px;
     background-color: $secondary-button-color;
     border: none;
     color: $primary-color;
@@ -273,8 +317,8 @@ body {
 }
 
 .payByParts {
-    min-width: 268px;
-    height: 74px;
+    min-width: 421px;
+    height: 64px;
     background-color: $third-button-color;
     border: none;
     color: $button-text-color;
@@ -286,6 +330,10 @@ body {
     font-weight: $main-font-weight;
     font-size: $secondary-font-size;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 
     &:hover {
         color: rgba(0, 0, 0, 0.5);
@@ -301,4 +349,14 @@ body {
         color: #9FA28A;
         opacity: 0.8;
     }
+}
+
+.suborder_buttons-text {
+    color: $text-color;
+}
+
+.offer_link {
+    color: $primary-color;
+    text-decoration: none;
+    cursor: pointer;
 }

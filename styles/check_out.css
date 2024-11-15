@@ -127,36 +127,77 @@ body {
   text-decoration: none;
 }
 
+.body_container-pay {
+  display: grid;
+  grid-template-rows: 13% 75% 12%;
+  grid-template-columns: 20% 60% 20%;
+}
+
 .order_collect {
+  grid-row: 2/3;
+  grid-column: 2/3;
   max-width: 48rem;
   display: grid;
   grid-template-rows: 15% 40% 55%;
   margin: 0 auto;
+  gap: 3rem;
 }
 
 .order_collect-line1 {
   grid-row: 1/2;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
 }
 
 .suborder_collect {
   grid-row: 2/3;
-  display: grid;
-  grid-template-columns: 65% 35%;
 }
 
 .colLeft {
   grid-column: 1/2;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  color: #BD7048;
+  font-size: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.line1,
+.line2,
+.line3,
+.line4,
+.line5 {
+  display: flex;
+  justify-content: space-between;
+  max-height: 3.5rem;
+}
+
+.price {
+  color: rgba(26, 26, 26, 0.7);
+}
+
+.line5 {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.suborder {
+  grid-row: 3/4;
 }
 
 .suborder_buttons {
   grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .leaveOrder {
-  min-width: 268px;
-  height: 74px;
+  min-width: 421px;
+  height: 64px;
   background-color: #BD7048;
   border: none;
   color: white;
@@ -183,8 +224,8 @@ body {
 }
 
 .pay {
-  min-width: 268px;
-  height: 74px;
+  min-width: 421px;
+  height: 64px;
   background-color: #FFDBC9;
   border: none;
   color: #BD7048;
@@ -211,8 +252,8 @@ body {
 }
 
 .payByParts {
-  min-width: 268px;
-  height: 74px;
+  min-width: 421px;
+  height: 64px;
   background-color: #F14635;
   border: none;
   color: white;
@@ -224,6 +265,9 @@ body {
   font-weight: 400;
   font-size: 15px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .payByParts:hover {
   color: rgba(0, 0, 0, 0.5);
@@ -236,4 +280,14 @@ body {
 .payByParts a:hover {
   color: #9FA28A;
   opacity: 0.8;
+}
+
+.suborder_buttons-text {
+  color: rgba(26, 26, 26, 0.7);
+}
+
+.offer_link {
+  color: #BD7048;
+  text-decoration: none;
+  cursor: pointer;
 }/*# sourceMappingURL=check_out.css.map */

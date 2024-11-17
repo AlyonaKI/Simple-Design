@@ -16,7 +16,7 @@ $button-text-color: white;
 $secondary-button-color: #FFDBC9;
 $third-button-color: #F14635;
 $inactive-checkout-color: rgba(37, 37, 37, 0.5);
-$page-background: #E5E5E5;
+$question-background: #FAFAFA;
 
 
 
@@ -24,7 +24,7 @@ $page-background: #E5E5E5;
   $secondary-font-size,
   $subheading-font-weight,
   $primary-color) {
-  min-width: 268px;
+  max-width: 268px;
   height: 74px;
   background-color: $primary-color;
   border: none;

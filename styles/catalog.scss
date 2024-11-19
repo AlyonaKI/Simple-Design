@@ -57,6 +57,7 @@ $question-background: #FAFAFA;
     font-weight: $subheading-font-weight;
     font-size: 0.75rem; //15px
     box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
+    width: 90rem;
 
     .header_container {
         padding: 2rem 5rem; //40px 100px
@@ -171,6 +172,7 @@ $question-background: #FAFAFA;
     font-size: 0.75rem; //15px
     font-weight: $subheading-font-weight;
     box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
+    width: 90rem;
 
     .footer_container {
         padding: 2rem 5rem; //40px 100px
@@ -284,7 +286,7 @@ $question-background: #FAFAFA;
 }
 
 .main_container {
-    max-width: 90rem;
+    width: 90rem;
     padding: 0;
     margin: 0 auto;
     font-family: $main-font;
@@ -317,11 +319,35 @@ $question-background: #FAFAFA;
 .cardsContainer {
     display: flex;
     flex-wrap: nowrap;
-    gap: 3rem;
+    justify-content: space-between;
 }
 
 .cardImage {
     height: 16rem;
+}
+
+.cardName,
+.cardName-third {
+    font-weight: $medium-font-weight;
+}
+
+.cardName-third {
+    text-align: end;
+}
+
+.cardButton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid $button-text-color;
+    font-family: $main-font;
+    color: $primary-color;
+    font-size: $secondary-font-size;
+
+}
+
+.cardName-secondary {
+    color: $primary-color;
 }
 
 .button-container {
@@ -331,4 +357,5 @@ $question-background: #FAFAFA;
 
 .button {
     text-align: center;
+    cursor: pointer;
 }

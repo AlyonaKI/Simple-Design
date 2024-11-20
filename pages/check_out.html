@@ -30,11 +30,11 @@
             <div class="order-options">
                 <div class="option_plan">
                     <div class="option_plan-title">
-                        <input type="checkbox">
-                        <p>
-                        <h4 class="option_plan-subtitle">Планировка</h4>
-                        </p>
+                        <input type="checkbox" id="option1"> <label for="option1">
+                            <h4 class="option_plan-subtitle">Планировка</h4>
+                        </label>
                         <p>99 000 mr </p>
+
                     </div>
                     <article class="option_plan-details">
                         <ul>
@@ -46,11 +46,11 @@
                 </div>
                 <div class="option_project">
                     <div class="option_project-title">
-                        <input type="checkbox">
-                        <p>
-                        <h4 class="option_plan-subtitle">Дизайн-проект</h4>
-                        </p>
+                        <input type="checkbox" id="option2" checked="checked"> <label for="option2">
+                            <h4 class="option_plan-subtitle">Дизайн-проект</h4>
+                        </label>
                         <p>199 000 mr </p>
+
                     </div>
                     <article class="option_plan-details">
                         <ul>
@@ -76,34 +76,37 @@
             <div class="extras-option">
                 <div class="extras_option-first">
                     <div class="option_first-title">
-                        <input type="checkbox">
-                        <div class="tender">
-                            <h4 class="first_title-subtitle">Тендер строительных бригад</h4>
-                            <p class="option_first-details">+49 000 mr </p>
-                        </div>
+                        <input type="checkbox" id="extras1" checked="checked"> <label for="extras1">
+                            <div class="tender">
+                                <h4 class="first_title-subtitle active">Тендер строительных бригад</h4>
+                                <p class="option_first-details">+49 000 mr </p>
+                            </div>
+                        </label>
                     </div>
                 </div>
                 <div class="extras_option-first">
                     <div class="option_first-title">
-                        <input type="checkbox">
-                        <div class="tender">
-                            <h4 class="first_title-subtitle">Составление сметы</h4>
-                            <article class="option_first-details">
-                                <p>+49 000 mr </p>
-                            </article>
-                        </div>
+                        <input type="checkbox" id="extras2"> <label for="extras2">
+                            <div class="tender">
+                                <h4 class="first_title-subtitle">Составление сметы</h4>
+                                <article class="option_first-details">
+                                    <p>+49 000 mr </p>
+                                </article>
+                            </div>
+                        </label>
                     </div>
                 </div>
 
                 <div class="extras_option-first">
                     <div class="option_first-title">
-                        <input type="checkbox">
-                        <div class="tender">
-                            <h4 class="first_title-subtitle">Печать альбома</h4>
-                            <article class="option_first-details">
-                                <p>+19 000 mr </p>
-                            </article>
-                        </div>
+                        <input type="checkbox" id="extras3"> <label for="extras3">
+                            <div class="tender">
+                                <h4 class="first_title-subtitle">Печать альбома</h4>
+                                <article class="option_first-details">
+                                    <p>+19 000 mr </p>
+                                </article>
+                            </div>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -136,7 +139,8 @@
                 <div class="suborder_collect">
                     <div class="suborder_collect-colLeft">
                         <div class="line1">
-                            <h4 class="colLeft"><input type="checkbox" name="order"> Замеры *</h4>
+                            <h4 class="colLeft"><input type="checkbox" id="price" checked="checked"> <label for="price">
+                                    Замеры *</label></h4>
                             <p class="price">19 000 mr</p>
                         </div>
                         <div class="line2">

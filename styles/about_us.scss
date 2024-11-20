@@ -117,11 +117,14 @@ span {
     text-align: center;
 
         .banner_top {
+            margin-top: 2rem;
             opacity: 0.7;
+            font-size: 1.5rem;
+            font-weight: $medium-font-weight;
         }
 
         h1 {
-            padding: 0 10rem;
+            margin-bottom: 5rem;
             font-size: 2.5rem;
             font-weight: $medium-font-weight;
         } 
@@ -229,7 +232,7 @@ h2 {
         background-image: url(../images/about_us/subtitle_line.svg);
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position-y: 40%;
+        background-position-y: 30%;
     }
     
     .team_info-text {
@@ -249,7 +252,7 @@ h2 {
         grid-row: 1 / 2;
         background-image: url(../images/about_us/subtitle_line.svg);
         background-repeat: no-repeat; 
-        background-position-y: 40%;
+        background-position-y: 30%;
     }
 }
 
@@ -360,3 +363,233 @@ video {
       align-items: center;
     }
   }
+
+
+@media screen and (max-width:768px) {
+  
+  body {
+    max-width: 768px;
+
+    .banner {
+
+          h1 {
+              margin-bottom: 2rem;
+              font-size: 2rem;
+          } 
+          
+          .banner_image {
+              height: 23rem;
+          }
+      }
+
+      .concepts {
+        max-height: 300px;
+        max-width: 715px;
+        min-width: 600px;
+        margin: 40px 0 40px 3rem;
+        column-gap: 2rem;
+    
+        .concepts_text {
+            font-size: 0.8rem;
+        }
+    
+        .concepts_image {
+
+            img {
+              max-height: 250px;
+            }
+        }
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    .team_info, .projects_info {
+      margin: 40px 1rem 40px 3rem;
+      column-gap: 1rem;
+    }
+
+    .team_info {
+      grid-template-columns: 45% 1fr;
+    }
+
+    .projects_info {
+      grid-template-columns: 1fr 45%;
+    }
+
+    .founder {
+      max-height: 300px;
+      max-width: 715px;
+      min-width: 600px;
+      margin: 40px 0 40px 3rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: 13% 17% 1fr;
+      column-gap: 2rem;
+      align-items: center;
+
+      .founder_info {
+          
+          h3 {
+          font-size: 0.9rem;
+          padding-bottom: 10px;
+        }
+      }
+
+      .founder_image {
+          
+          img {
+            max-width: 250px;
+          }
+      }
+
+      .founder_text {
+          font-size: 0.8rem;
+          padding-right: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:440px) {
+
+  body {
+    max-width: 440px;
+    
+
+  .header_nav, .header_contact-icon {
+      display: none; 
+    }
+  
+    .header_contact-info {
+        a, p {
+          display: none;
+        }
+      }
+
+    .banner {
+      .banner_top {
+      font-size: 1rem;
+      padding-left: 2rem;
+      text-align: left;
+      }
+
+      .banner_title {
+        font-size: 1.3rem;
+        padding: 0 1rem 0 2rem;
+        text-align: left;
+      }
+
+      .banner_image {
+        height: 10rem;
+        background-image: url(../images/about_us/banner_mobile.svg);
+      }
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    .concepts {
+      max-width: 420px;
+      min-width: 400px;
+      min-height: 600px;
+      max-height: 33rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr) 280px;
+      margin: 40px 0;
+      column-gap: 0;
+      row-gap: 1.5rem;
+
+      .concepts_subheading, .concepts_text {
+        padding: 0 2rem;
+      }
+
+      .concepts_text {
+        font-size: 1rem;
+      }
+
+      .concepts_image {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        justify-self: center;
+
+        img {
+        height: 280px;
+        min-width: 440px;
+        object-fit: cover;
+        object-position: 20% 100%;
+        }
+      }
+    }
+
+    .team_info, .projects_info {
+      margin: 0;
+      grid-template-columns: 1fr;
+      padding: 20px 2rem;
+      column-gap: 0;
+    }
+
+    .team_info-icon, .projects_info-icon {
+        display: none;
+      }
+
+      .team_info {
+
+        .team_info-text {
+          grid-column: 1 / 2;
+          justify-self: center;
+        }
+      }
+    
+    .founder {
+        max-width: 420px;
+        min-width: 400px;
+        min-height: 820px;
+        max-height: 1070px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 7% 7% 19rem 1fr;
+        margin: 40px 0;
+        column-gap: 0;
+        row-gap: 1.5rem;
+
+        .founder_image {
+          grid-column: 1 / 2;
+          grid-row: 3 / 4;
+          justify-self: center;
+
+          img {
+            min-height: 350px;
+            width: 400px;
+            object-fit: contain;
+          }
+        }
+
+        .founder_name {
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+        }
+
+        .founder_info {
+          grid-column: 1 / 2;
+          grid-row: 2 / 3;
+
+          h3 {
+            padding-right: 2rem;
+            font-size: 1rem;
+          }
+        }
+
+        .founder_text {
+          font-size: 1rem;
+          grid-column: 1 / 2;
+          grid-row: 4 / 5;
+        }
+
+        .founder_name, .founder_info, .founder_text {
+          padding: 0 2rem;
+        }
+    }
+  }
+}

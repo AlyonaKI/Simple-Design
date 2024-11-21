@@ -1,6 +1,6 @@
 body {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1600px;
   margin: 0 auto;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 20px;
@@ -281,8 +281,11 @@ body {
   padding-left: 4rem;
   text-decoration: none;
   color: black;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
+}
+.services__items a:hover {
+  color: #BD7048;
 }
 .services__items .services__item-one_link {
   grid-column: 1/2;
@@ -461,4 +464,131 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+  body .options {
+    margin: 2rem 0;
+    grid-template-rows: 4rem auto;
+  }
+  body .options h3, body .options p, body .options ul {
+    font-size: 0.8rem;
+  }
+  body .options p {
+    padding-top: 0.5rem;
+  }
+  body .options h2 {
+    font-size: 1.4rem;
+  }
+  body .options .options__title-one > h2, body .options .options__title-two > h2 {
+    margin: 0 2rem;
+  }
+  body .options .options__description-one {
+    margin-left: 2rem;
+    padding-right: 1rem;
+  }
+  body .options .options__description-two {
+    margin-right: 2rem;
+    padding-left: 1rem;
+  }
+  body .options .options__price .option__price {
+    font-size: 1.2rem;
+  }
+  body .options .add {
+    max-width: 7rem;
+    min-width: 120px;
+    height: 3rem;
+    font-size: 0.8rem;
+  }
+  body .options .add img {
+    max-width: 1rem;
+  }
+  body .options .sample-project {
+    max-width: 10rem;
+    min-width: 175px;
+    height: 3rem;
+    font-size: 0.8rem;
+  }
+  .services, .faq-accordion {
+    margin: 1rem 2rem;
+  }
+  .services__title, .faq-accordion__title {
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+  }
+  .services__items {
+    grid-template-rows: 1fr 30px;
+    -moz-column-gap: 1.3rem;
+         column-gap: 1.3rem;
+  }
+  .services__items div {
+    max-width: 215px;
+  }
+  .services__items div img {
+    max-width: 215px;
+  }
+  .services__items a {
+    padding-left: 0.3rem;
+    font-size: 0.8rem;
+  }
+  .accordion__header {
+    min-height: 2rem;
+    font-size: 0.9rem;
+  }
+  .accordion__content {
+    padding: 0.5rem;
+  }
+  .accordion__content p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  body {
+    max-width: 440px;
+  }
+  body .options {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem auto 5rem auto;
+  }
+  body .options h2 {
+    font-weight: 600;
+  }
+  body .options .options__title-two {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  body .options .title-two_background {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  body .options .options__title-block {
+    display: none;
+  }
+  body .options .title-one_background {
+    border-radius: 0;
+  }
+  body .options .options__description-one, body .options .options__description-two {
+    margin: 0 2rem;
+    padding: 0 0 3.5rem 0;
+  }
+  body .options .buttons {
+    flex-flow: column nowrap;
+    gap: 15px;
+    align-items: center;
+  }
+  body .options .buttons .add, body .options .buttons .sample-project {
+    min-width: 300px;
+  }
+  body .accordion__header {
+    font-size: 0.75rem;
+  }
+  body .accordion__content {
+    padding: 0.3rem;
+  }
+  body .accordion__content p {
+    font-size: 0.75rem;
+  }
 }/*# sourceMappingURL=prices.css.map */

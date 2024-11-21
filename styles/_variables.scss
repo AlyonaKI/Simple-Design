@@ -7,23 +7,22 @@ $subheading-font-size: 30px;
 $subheading-font-weight: 600;
 $medium-font-weight: 500;
 
-
 $main-color: black;
 $text-color: rgba(26, 26, 26, 0.7);
-$subheading-color: #7E7E7E;
-$primary-color: #BD7048;
+$subheading-color: #7e7e7e;
+$primary-color: #bd7048;
 $button-text-color: white;
-$secondary-button-color: #FFDBC9;
-$third-button-color: #F14635;
+$secondary-button-color: #ffdbc9;
+$third-button-color: #f14635;
 $inactive-checkout-color: rgba(37, 37, 37, 0.5);
-$question-background: #FAFAFA;
+$question-background: #fafafa;
 
-
-
-@mixin button($button-text-color,
+@mixin button(
+  $button-text-color,
   $secondary-font-size,
   $subheading-font-weight,
-  $primary-color) {
+  $primary-color
+) {
   max-width: 268px;
   height: 74px;
   background-color: $primary-color;
@@ -48,7 +47,7 @@ $question-background: #FAFAFA;
   }
 
   a:hover {
-    color: #9FA28A;
+    color: #9fa28a;
     opacity: 0.8;
   }
 }

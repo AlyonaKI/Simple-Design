@@ -22,7 +22,7 @@ body {
   color: black;
 }
 .header_container .header_logo a span:nth-of-type(2) {
-  color: #BD7048;
+  color: #bd7048;
 }
 .header_container .header_logo a span:nth-of-type(3) {
   font-weight: 400;
@@ -52,20 +52,20 @@ body {
   left: 25%;
   width: 50%;
   height: 0.1rem;
-  background-color: #BD7048;
+  background-color: #bd7048;
   transform: translateX(50%);
   transition: opacity 0.3s ease;
   opacity: 0;
 }
 .header_container .header_nav-list .header_nav-link.active {
-  color: #BD7048;
+  color: #bd7048;
   font-weight: 600;
 }
 .header_container .header_nav-list .header_nav-link.active::after {
   opacity: 1;
 }
 .header_container .header_nav-list .header_nav-link:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .header_container .header_nav-list .header_nav-link:hover::after {
   opacity: 1;
@@ -87,7 +87,7 @@ body {
   color: #3b3b3b;
 }
 .header_container .header_contact .header_contact-info a:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .header_container .header_contact .header_contact-info p {
   font-weight: 500;
@@ -134,7 +134,7 @@ body {
   grid-row: 1/2;
 }
 .options .title-one_background {
-  background-color: #BD7048;
+  background-color: #bd7048;
   border-radius: 0 20px 20px 0;
   z-index: 1;
 }
@@ -166,7 +166,7 @@ body {
 }
 .options .options__price .option__price {
   padding: 0;
-  color: #BD7048;
+  color: #bd7048;
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -180,7 +180,7 @@ body {
 .buttons .add {
   max-width: 268px;
   height: 74px;
-  background-color: #BD7048;
+  background-color: #bd7048;
   border: none;
   color: white;
   border-radius: 100px;
@@ -207,13 +207,13 @@ body {
   color: white;
 }
 .buttons .add a:hover {
-  color: #9FA28A;
+  color: #9fa28a;
   opacity: 0.8;
 }
 .buttons .sample-project {
   max-width: 268px;
   height: 74px;
-  background-color: #BD7048;
+  background-color: #bd7048;
   border: none;
   color: white;
   border-radius: 100px;
@@ -226,7 +226,7 @@ body {
   max-width: 12rem;
   min-width: 240px;
   height: 57px;
-  background-color: #FFDBC9;
+  background-color: #ffdbc9;
 }
 .buttons .sample-project:hover {
   color: rgba(0, 0, 0, 0.5);
@@ -237,11 +237,11 @@ body {
   color: white;
 }
 .buttons .sample-project a:hover {
-  color: #9FA28A;
+  color: #9fa28a;
   opacity: 0.8;
 }
 .buttons .sample-project a {
-  color: #BD7048;
+  color: #bd7048;
 }
 
 .description_additional, .options__result {
@@ -249,7 +249,7 @@ body {
 }
 
 .description_additional a {
-  color: #BD7048;
+  color: #bd7048;
 }
 .description_additional a:hover {
   color: #9FA28A;
@@ -316,7 +316,7 @@ body {
   align-items: center;
   cursor: pointer;
   padding: 1rem;
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 100px;
   transition: background 0.3s, box-shadow 0.3s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -333,7 +333,7 @@ body {
   border-radius: 50%;
   margin-right: 1rem;
   transition: transform 0.3s, background 0.3s, color 0.3s;
-  background: #FAFAFA;
+  background: #fafafa;
 }
 .accordion__header .accordion__header-question {
   font-size: 1rem;
@@ -341,7 +341,7 @@ body {
 }
 
 .accordion__header:hover {
-  color: #BD7048;
+  color: #bd7048;
   opacity: 0.7;
 }
 
@@ -364,9 +364,9 @@ body {
 
 .accordion__checkbox:checked + .accordion__header-icon {
   transform: rotate(45deg);
-  color: #BD7048;
-  border-color: #BD7048;
-  background: #FAFAFA;
+  color: #bd7048;
+  border-color: #bd7048;
+  background: #fafafa;
 }
 
 .accordion__checkbox:checked ~ .accordion__content {
@@ -392,7 +392,7 @@ body {
   color: black;
 }
 .footer .footer_container .footer_logo a span:nth-of-type(2) {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer_logo a span:nth-of-type(3) {
   font-weight: 400;
@@ -410,14 +410,14 @@ body {
   color: rgba(33, 33, 33, 0.5);
 }
 .footer .footer_container .footer_nav-list .footer_nav-link.active {
-  color: #BD7048;
+  color: #bd7048;
   font-weight: 600;
 }
 .footer .footer_container .footer_nav-list .footer_nav-link.active::after {
   opacity: 1;
 }
 .footer .footer_container .footer_nav-list .footer_nav-link:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer-policy {
   font-weight: 500;
@@ -429,7 +429,7 @@ body {
   color: rgba(33, 33, 33, 0.5);
 }
 .footer .footer_container .footer-policy li a:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer_contact {
   display: flex;
@@ -448,7 +448,7 @@ body {
   color: #3b3b3b;
 }
 .footer .footer_container .footer_contact .footer_contact-info a:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer_contact .footer_contact-info p {
   font-weight: 500;

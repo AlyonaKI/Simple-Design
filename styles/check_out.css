@@ -230,6 +230,8 @@ body {
   margin: 0 auto;
   gap: 1rem;
   background-color: #FFF6F1;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 .order_collect-line1 {
@@ -301,15 +303,7 @@ body {
 }
 .leaveOrder:hover {
   color: rgba(0, 0, 0, 0.5);
-  opacity: 0.8;
-}
-.leaveOrder a {
-  text-decoration: none;
-  color: white;
-}
-.leaveOrder a:hover {
-  color: #9FA28A;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .pay {
@@ -330,14 +324,7 @@ body {
 .pay:hover {
   color: rgba(0, 0, 0, 0.5);
   opacity: 0.8;
-}
-.pay a {
-  text-decoration: none;
   color: white;
-}
-.pay a:hover {
-  color: #9FA28A;
-  opacity: 0.8;
 }
 
 .payByParts {
@@ -360,14 +347,6 @@ body {
 }
 .payByParts:hover {
   color: rgba(0, 0, 0, 0.5);
-  opacity: 0.8;
-}
-.payByParts a {
-  text-decoration: none;
-  color: white;
-}
-.payByParts a:hover {
-  color: #9FA28A;
   opacity: 0.8;
 }
 

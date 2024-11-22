@@ -285,7 +285,7 @@ body {
   font-weight: 600;
 }
 .services__items a:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .services__items .services__item-one_link {
   grid-column: 1/2;

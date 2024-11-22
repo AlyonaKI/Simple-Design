@@ -54,6 +54,7 @@ $question-background: #FAFAFA;
 }
 
 .header {
+    font-family: $main-font;
     font-weight: $subheading-font-weight;
     font-size: 0.75rem; //15px
     box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
@@ -169,6 +170,7 @@ $question-background: #FAFAFA;
 }
 
 .footer {
+    font-family: $main-font;
     font-size: 0.75rem; //15px
     font-weight: $subheading-font-weight;
     box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
@@ -340,9 +342,20 @@ $question-background: #FAFAFA;
     align-items: center;
     gap: 10px;
     border: 1px solid $button-text-color;
+    border-radius: 25px;
     font-family: $main-font;
     color: $primary-color;
     font-size: $secondary-font-size;
+    background-color: $question-background;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0.7;
+        color: white;
+    }
 
 }
 

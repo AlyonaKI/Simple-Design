@@ -91,6 +91,7 @@ body {
     grid-row: 2/3;
     max-width: 45rem;
     margin: 0 auto;
+    padding-left: 4rem;
 }
 
 .order-title,
@@ -354,8 +355,8 @@ body {
 }
 
 .leaveOrder {
-    min-width: 421px;
-    height: 64px;
+    min-width: 26.3rem;
+    height: 4rem;
     background-color: $primary-color;
     border: none;
     color: $button-text-color;
@@ -375,8 +376,8 @@ body {
 }
 
 .pay {
-    min-width: 421px;
-    height: 64px;
+    min-width: 26.3rem;
+    height: 4rem;
     background-color: $secondary-button-color;
     border: none;
     color: $primary-color;
@@ -398,8 +399,8 @@ body {
 }
 
 .payByParts {
-    min-width: 421px;
-    height: 64px;
+    min-width: 26.3rem;
+    height: 4rem;
     background-color: $third-button-color;
     border: none;
     color: $button-text-color;
@@ -528,6 +529,7 @@ body {
 
     .body_container-order {
         max-width: 27.5rem;
+        padding-left: 0rem;
     }
 
     .body_container-styles {
@@ -591,6 +593,17 @@ body {
     }
 
     .price {
+        font-size: 15px;
+    }
+
+    .leaveOrder,
+    .pay,
+    .payByParts {
+        min-width: 17rem;
+        height: 4rem;
+    }
+
+    .suborder_buttons-text {
         font-size: 15px;
     }
 

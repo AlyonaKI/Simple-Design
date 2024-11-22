@@ -37,6 +37,7 @@ body {
   grid-row: 2/3;
   max-width: 45rem;
   margin: 0 auto;
+  padding-left: 4rem;
 }
 
 .order-title,
@@ -287,8 +288,8 @@ body {
 }
 
 .leaveOrder {
-  min-width: 421px;
-  height: 64px;
+  min-width: 26.3rem;
+  height: 4rem;
   background-color: #BD7048;
   border: none;
   color: white;
@@ -307,8 +308,8 @@ body {
 }
 
 .pay {
-  min-width: 421px;
-  height: 64px;
+  min-width: 26.3rem;
+  height: 4rem;
   background-color: #FFDBC9;
   border: none;
   color: #BD7048;
@@ -328,8 +329,8 @@ body {
 }
 
 .payByParts {
-  min-width: 421px;
-  height: 64px;
+  min-width: 26.3rem;
+  height: 4rem;
   background-color: #F14635;
   border: none;
   color: white;
@@ -437,6 +438,7 @@ body {
   }
   .body_container-order {
     max-width: 27.5rem;
+    padding-left: 0rem;
   }
   .body_container-styles {
     padding-left: 0rem;
@@ -487,6 +489,15 @@ body {
     font-weight: 400;
   }
   .price {
+    font-size: 15px;
+  }
+  .leaveOrder,
+.pay,
+.payByParts {
+    min-width: 17rem;
+    height: 4rem;
+  }
+  .suborder_buttons-text {
     font-size: 15px;
   }
 }/*# sourceMappingURL=check_out.css.map */

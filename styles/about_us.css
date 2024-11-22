@@ -1,6 +1,6 @@
 body {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1600px;
   margin: 0 auto;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 20px;
@@ -12,7 +12,7 @@ header, .team-pictures, video {
 }
 
 span {
-  color: #BD7048;
+  color: #bd7048;
 }
 
 .header_container {
@@ -30,7 +30,7 @@ span {
   color: black;
 }
 .header_container .header_logo a span:nth-of-type(2) {
-  color: #BD7048;
+  color: #bd7048;
 }
 .header_container .header_logo a span:nth-of-type(3) {
   font-weight: 400;
@@ -60,20 +60,20 @@ span {
   left: 25%;
   width: 50%;
   height: 0.1rem;
-  background-color: #BD7048;
+  background-color: #bd7048;
   transform: translateX(50%);
   transition: opacity 0.3s ease;
   opacity: 0;
 }
 .header_container .header_nav-list .header_nav-link.active {
-  color: #BD7048;
+  color: #bd7048;
   font-weight: 600;
 }
 .header_container .header_nav-list .header_nav-link.active::after {
   opacity: 1;
 }
 .header_container .header_nav-list .header_nav-link:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .header_container .header_nav-list .header_nav-link:hover::after {
   opacity: 1;
@@ -95,7 +95,7 @@ span {
   color: #3b3b3b;
 }
 .header_container .header_contact .header_contact-info a:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .header_container .header_contact .header_contact-info p {
   font-weight: 500;
@@ -106,10 +106,13 @@ span {
   text-align: center;
 }
 .banner .banner_top {
+  margin-top: 2rem;
   opacity: 0.7;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 .banner h1 {
-  padding: 0 10rem;
+  margin-bottom: 5rem;
   font-size: 2.5rem;
   font-weight: 500;
 }
@@ -123,7 +126,7 @@ span {
 
 .concepts {
   max-height: 430px;
-  max-width: 1300px;
+  max-width: 1350px;
   min-width: 1200px;
   margin: 30px 0 30px 7rem;
   display: grid;
@@ -159,7 +162,7 @@ h2 {
 
 .founder {
   max-height: 460px;
-  max-width: 1300px;
+  max-width: 1350px;
   min-width: 1200px;
   margin: 30px 0 30px 7rem;
   display: grid;
@@ -179,7 +182,7 @@ h2 {
 .founder .founder_info h3 {
   font-size: 20px;
   font-weight: 400;
-  color: #7E7E7E;
+  color: #7e7e7e;
 }
 .founder .founder_image {
   grid-column: 1/2;
@@ -209,7 +212,7 @@ h2 {
   background-image: url(../images/about_us/subtitle_line.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-y: 40%;
+  background-position-y: 30%;
 }
 .team_info .team_info-text {
   justify-self: end;
@@ -226,7 +229,7 @@ h2 {
   grid-row: 1/2;
   background-image: url(../images/about_us/subtitle_line.svg);
   background-repeat: no-repeat;
-  background-position-y: 40%;
+  background-position-y: 30%;
 }
 
 video {
@@ -234,6 +237,7 @@ video {
 }
 
 .footer {
+  margin-top: 3rem;
   font-size: 0.75rem;
   font-weight: 600;
   box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
@@ -250,7 +254,7 @@ video {
   color: black;
 }
 .footer .footer_container .footer_logo a span:nth-of-type(2) {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer_logo a span:nth-of-type(3) {
   font-weight: 400;
@@ -268,14 +272,14 @@ video {
   color: rgba(33, 33, 33, 0.5);
 }
 .footer .footer_container .footer_nav-list .footer_nav-link.active {
-  color: #BD7048;
+  color: #bd7048;
   font-weight: 600;
 }
 .footer .footer_container .footer_nav-list .footer_nav-link.active::after {
   opacity: 1;
 }
 .footer .footer_container .footer_nav-list .footer_nav-link:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer-policy {
   font-weight: 500;
@@ -287,7 +291,7 @@ video {
   color: rgba(33, 33, 33, 0.5);
 }
 .footer .footer_container .footer-policy li a:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer_contact {
   display: flex;
@@ -306,7 +310,7 @@ video {
   color: #3b3b3b;
 }
 .footer .footer_container .footer_contact .footer_contact-info a:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer_contact .footer_contact-info p {
   font-weight: 500;
@@ -319,4 +323,184 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+  body .banner h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  body .banner .banner_image {
+    height: 23rem;
+  }
+  body .concepts {
+    max-height: 300px;
+    max-width: 715px;
+    min-width: 600px;
+    margin: 40px 0 40px 3rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  body .concepts .concepts_text {
+    font-size: 0.8rem;
+  }
+  body .concepts .concepts_image img {
+    max-height: 250px;
+  }
+  body h2 {
+    font-size: 1.6rem;
+  }
+  body .team_info, body .projects_info {
+    margin: 40px 1rem 40px 3rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+  body .team_info {
+    grid-template-columns: 45% 1fr;
+  }
+  body .projects_info {
+    grid-template-columns: 1fr 45%;
+  }
+  body .founder {
+    max-height: 300px;
+    max-width: 715px;
+    min-width: 600px;
+    margin: 40px 0 40px 3rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 13% 17% 1fr;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    align-items: center;
+  }
+  body .founder .founder_info h3 {
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+  }
+  body .founder .founder_image img {
+    max-width: 250px;
+  }
+  body .founder .founder_text {
+    font-size: 0.8rem;
+    padding-right: 1.2rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  body {
+    max-width: 440px;
+  }
+  body .header_nav, body .header_contact-icon {
+    display: none;
+  }
+  body .header_contact-info a, body .header_contact-info p {
+    display: none;
+  }
+  body .banner .banner_top {
+    font-size: 1rem;
+    padding-left: 2rem;
+    text-align: left;
+  }
+  body .banner .banner_title {
+    font-size: 1.3rem;
+    padding: 0 1rem 0 2rem;
+    text-align: left;
+  }
+  body .banner .banner_image {
+    height: 10rem;
+    background-image: url(../images/about_us/banner_mobile.svg);
+  }
+  body h2 {
+    font-size: 1.3rem;
+  }
+  body .concepts {
+    max-width: 420px;
+    min-width: 400px;
+    min-height: 600px;
+    max-height: 33rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr) 280px;
+    margin: 40px 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 1.5rem;
+  }
+  body .concepts .concepts_subheading, body .concepts .concepts_text {
+    padding: 0 2rem;
+  }
+  body .concepts .concepts_text {
+    font-size: 1rem;
+  }
+  body .concepts .concepts_image {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: center;
+  }
+  body .concepts .concepts_image img {
+    height: 280px;
+    min-width: 440px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 20% 100%;
+       object-position: 20% 100%;
+  }
+  body .team_info, body .projects_info {
+    margin: 0;
+    grid-template-columns: 1fr;
+    padding: 20px 2rem;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  body .team_info-icon, body .projects_info-icon {
+    display: none;
+  }
+  body .team_info .team_info-text {
+    grid-column: 1/2;
+    justify-self: center;
+  }
+  body .founder {
+    max-width: 420px;
+    min-width: 400px;
+    min-height: 820px;
+    max-height: 1070px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7% 7% 19rem 1fr;
+    margin: 40px 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 1.5rem;
+  }
+  body .founder .founder_image {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: center;
+  }
+  body .founder .founder_image img {
+    min-height: 350px;
+    width: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  body .founder .founder_name {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  body .founder .founder_info {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  body .founder .founder_info h3 {
+    padding-right: 2rem;
+    font-size: 1rem;
+  }
+  body .founder .founder_text {
+    font-size: 1rem;
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  body .founder .founder_name, body .founder .founder_info, body .founder .founder_text {
+    padding: 0 2rem;
+  }
 }/*# sourceMappingURL=about_us.css.map */

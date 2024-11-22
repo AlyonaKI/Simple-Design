@@ -3,7 +3,7 @@
   font-weight: 600;
   font-size: 0.75rem;
   box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
-  width: 90rem;
+  min-width: 90rem;
 }
 .header .header_container {
   padding: 2rem 5rem;
@@ -94,7 +94,7 @@
   font-size: 0.75rem;
   font-weight: 600;
   box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
-  width: 90rem;
+  min-width: 90rem;
 }
 .footer .footer_container {
   padding: 2rem 5rem;
@@ -180,7 +180,7 @@
 }
 
 .main_container {
-  width: 90rem;
+  min-width: 90rem;
   padding: 0;
   font-family: "Montserrat Alternates", sans-serif;
 }
@@ -259,4 +259,33 @@
 .button {
   text-align: center;
   cursor: pointer;
+}
+
+.cardsContainer-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 440px) {
+  .main_container,
+.header,
+.footer {
+    min-width: 27.5rem;
+  }
+  .cardsContainer {
+    display: none;
+  }
+  .cardsContainer-mobile {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.5rem;
+  }
+  .cardImage-mobile {
+    min-height: 13.6rem;
+  }
+  .main_ccontainer-head {
+    display: none;
+  }
+  .head {
+    font-size: 25px;
+  }
 }/*# sourceMappingURL=catalog.css.map */

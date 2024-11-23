@@ -108,13 +108,15 @@ body {
 .options p {
   padding-top: 0.7rem;
 }
-.options .options__title-one, .options .options__title-two {
+.options .options__title-one,
+.options .options__title-two {
   color: white;
   font-size: 1.5rem;
   font-weight: 600;
   align-self: center;
 }
-.options .options__title-one > h2, .options .options__title-two > h2 {
+.options .options__title-one > h2,
+.options .options__title-two > h2 {
   margin: 0 7rem;
 }
 .options .options__title-two {
@@ -126,10 +128,13 @@ body {
   grid-column: 2/3;
   grid-row: 1/2;
 }
-.options .options__title-block, .options .title-two_background {
-  background-color: #DB916B;
+.options .options__title-block,
+.options .title-two_background {
+  background-color: #db916b;
 }
-.options .options__title-one, .options .options__title-block, .options .title-one_background {
+.options .options__title-one,
+.options .options__title-block,
+.options .title-one_background {
   grid-column: 1/2;
   grid-row: 1/2;
 }
@@ -141,7 +146,8 @@ body {
 .options .options__title-one {
   z-index: 2;
 }
-.options .options__description-one, .options .options__description-two {
+.options .options__description-one,
+.options .options__description-two {
   padding-top: 2rem;
   font-size: 1rem;
   max-width: 30rem;
@@ -244,7 +250,8 @@ body {
   color: #bd7048;
 }
 
-.description_additional, .options__result {
+.description_additional,
+.options__result {
   font-weight: 500;
 }
 
@@ -252,15 +259,17 @@ body {
   color: #bd7048;
 }
 .description_additional a:hover {
-  color: #9FA28A;
+  color: #9fa28a;
   opacity: 0.8;
 }
 
-.services, .faq-accordion {
+.services,
+.faq-accordion {
   margin: 0 7rem;
 }
 
-.services__title, .faq-accordion__title {
+.services__title,
+.faq-accordion__title {
   margin-bottom: 4rem;
   text-align: center;
   font-size: 2rem;
@@ -272,7 +281,7 @@ body {
   grid-template-columns: repeat(3, auto);
   grid-template-rows: 1fr 15%;
   -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   align-items: center;
   justify-items: center;
 }
@@ -285,7 +294,7 @@ body {
   font-weight: 600;
 }
 .services__items a:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .services__items .services__item-one_link {
   grid-column: 1/2;
@@ -474,7 +483,9 @@ body {
     margin: 2rem 0;
     grid-template-rows: 4rem auto;
   }
-  body .options h3, body .options p, body .options ul {
+  body .options h3,
+  body .options p,
+  body .options ul {
     font-size: 0.8rem;
   }
   body .options p {
@@ -483,7 +494,8 @@ body {
   body .options h2 {
     font-size: 1.4rem;
   }
-  body .options .options__title-one > h2, body .options .options__title-two > h2 {
+  body .options .options__title-one > h2,
+  body .options .options__title-two > h2 {
     margin: 0 2rem;
   }
   body .options .options__description-one {
@@ -512,17 +524,19 @@ body {
     height: 3rem;
     font-size: 0.8rem;
   }
-  .services, .faq-accordion {
+  .services,
+  .faq-accordion {
     margin: 1rem 2rem;
   }
-  .services__title, .faq-accordion__title {
+  .services__title,
+  .faq-accordion__title {
     margin-bottom: 1.5rem;
     font-size: 1.4rem;
   }
   .services__items {
     grid-template-rows: 1fr 30px;
     -moz-column-gap: 1.3rem;
-         column-gap: 1.3rem;
+    column-gap: 1.3rem;
   }
   .services__items div {
     max-width: 215px;
@@ -570,7 +584,8 @@ body {
   body .options .title-one_background {
     border-radius: 0;
   }
-  body .options .options__description-one, body .options .options__description-two {
+  body .options .options__description-one,
+  body .options .options__description-two {
     margin: 0 2rem;
     padding: 0 0 3.5rem 0;
   }
@@ -579,7 +594,8 @@ body {
     gap: 15px;
     align-items: center;
   }
-  body .options .buttons .add, body .options .buttons .sample-project {
+  body .options .buttons .add,
+  body .options .buttons .sample-project {
     min-width: 300px;
   }
   body .accordion__header {
@@ -591,4 +607,4 @@ body {
   body .accordion__content p {
     font-size: 0.75rem;
   }
-}/*# sourceMappingURL=prices.css.map */
+} /*# sourceMappingURL=prices.css.map */

@@ -91,6 +91,7 @@ body {
     grid-row: 2/3;
     max-width: 45rem;
     margin: 0 auto;
+    padding-left: 4rem;
 }
 
 .order-title,
@@ -294,6 +295,8 @@ body {
     margin: 0 auto;
     gap: 1rem;
     background-color: #FFF6F1;
+    padding: 2rem;
+    border-radius: 10px;
 }
 
 .order_collect-line1 {
@@ -352,8 +355,8 @@ body {
 }
 
 .leaveOrder {
-    min-width: 421px;
-    height: 64px;
+    min-width: 26.3rem;
+    height: 4rem;
     background-color: $primary-color;
     border: none;
     color: $button-text-color;
@@ -368,24 +371,13 @@ body {
 
     &:hover {
         color: rgba(0, 0, 0, 0.5);
-        opacity: 0.8;
+        opacity: 0.6;
     }
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
-
-    a:hover {
-        color: #9FA28A;
-        opacity: 0.8;
-    }
-
 }
 
 .pay {
-    min-width: 421px;
-    height: 64px;
+    min-width: 26.3rem;
+    height: 4rem;
     background-color: $secondary-button-color;
     border: none;
     color: $primary-color;
@@ -401,22 +393,14 @@ body {
     &:hover {
         color: rgba(0, 0, 0, 0.5);
         opacity: 0.8;
-    }
-
-    a {
-        text-decoration: none;
         color: white;
     }
 
-    a:hover {
-        color: #9FA28A;
-        opacity: 0.8;
-    }
 }
 
 .payByParts {
-    min-width: 421px;
-    height: 64px;
+    min-width: 26.3rem;
+    height: 4rem;
     background-color: $third-button-color;
     border: none;
     color: $button-text-color;
@@ -438,15 +422,6 @@ body {
         opacity: 0.8;
     }
 
-    a {
-        text-decoration: none;
-        color: white;
-    }
-
-    a:hover {
-        color: #9FA28A;
-        opacity: 0.8;
-    }
 }
 
 .suborder_buttons-text {
@@ -457,6 +432,10 @@ body {
     color: $primary-color;
     text-decoration: none;
     cursor: pointer;
+}
+
+.styles_options-mobile {
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -475,6 +454,21 @@ body {
     .body_container-styles {
         padding-left: 4.5rem;
     }
+
+    .styles_options {
+        display: none;
+    }
+
+    .styles_options-mobile {
+        display: inline;
+    }
+
+    .option {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        margin-bottom: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 440px) {
@@ -493,9 +487,12 @@ body {
         flex-direction: column;
         max-width: 27.5rem;
         margin: 0 auto;
+        padding: 2rem;
     }
 
-    .order-title {
+    .order-title,
+    .extras-title,
+    .styles-title {
         font-size: 25px;
         font-weight: $subheading-font-weight;
     }
@@ -510,11 +507,20 @@ body {
         max-width: 27.5rem;
     }
 
-    .option_plan-details {
-        padding-left: 1rem;
+    .extras-option {
+        font-size: 15px;
     }
 
 
+    .option_plan-details {
+        padding-left: 1rem;
+        font-size: 10px;
+    }
+
+    .option_plan-title,
+    .option_project-title {
+        justify-content: flex-start;
+    }
 
     .option_plan-subtitle {
         font-size: $secondary-font-size;
@@ -523,9 +529,82 @@ body {
 
     .body_container-order {
         max-width: 27.5rem;
+        padding-left: 0rem;
+    }
+
+    .body_container-styles {
+        padding-left: 0rem;
     }
 
     .option_project {
         max-width: 27.5rem;
+        padding: 1.85rem;
     }
+
+    .option {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    [type=checkbox]:not(:checked)+label:after,
+    [type=checkbox]:checked+label:after {
+        content: url(../images/check_out/Vector-mini.svg);
+        border: 1.5px solid black;
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    [type=checkbox]:not(:checked)+label:before,
+    [type=checkbox]:checked+label:before {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .option_project {
+        border: solid #BD7048 1px;
+        border-radius: 13px;
+        min-width: 18.5rem;
+    }
+
+    .price-mobile {
+        font-weight: 500;
+    }
+
+    .body_container-pay {
+        padding: 0rem;
+        max-width: 20.5rem;
+    }
+
+    .order_collect {
+        max-width: 20.5rem;
+        padding: 0.9rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order_collect-line1 {
+        font-size: 20px;
+
+    }
+
+    .colLeft {
+        font-size: 15px;
+        font-weight: $main-font-weight;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .leaveOrder,
+    .pay,
+    .payByParts {
+        min-width: 17rem;
+        height: 4rem;
+    }
+
+    .suborder_buttons-text {
+        font-size: 15px;
+    }
+
 }

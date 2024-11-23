@@ -54,9 +54,11 @@ $question-background: #FAFAFA;
 }
 
 .header {
+    font-family: $main-font;
     font-weight: $subheading-font-weight;
     font-size: 0.75rem; //15px
     box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
+    min-width: 90rem;
 
     .header_container {
         padding: 2rem 5rem; //40px 100px
@@ -168,9 +170,11 @@ $question-background: #FAFAFA;
 }
 
 .footer {
+    font-family: $main-font;
     font-size: 0.75rem; //15px
     font-weight: $subheading-font-weight;
     box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
+    min-width: 90rem;
 
     .footer_container {
         padding: 2rem 5rem; //40px 100px
@@ -284,9 +288,9 @@ $question-background: #FAFAFA;
 }
 
 .main_container {
-    max-width: 90rem;
+    min-width: 90rem;
     padding: 0;
-    margin: 0 auto;
+    // margin: 0 auto;
     font-family: $main-font;
 }
 
@@ -317,11 +321,46 @@ $question-background: #FAFAFA;
 .cardsContainer {
     display: flex;
     flex-wrap: nowrap;
-    gap: 3rem;
+    justify-content: space-between;
 }
 
 .cardImage {
     height: 16rem;
+}
+
+.cardName,
+.cardName-third {
+    font-weight: $medium-font-weight;
+}
+
+.cardName-third {
+    text-align: end;
+}
+
+.cardButton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid $button-text-color;
+    border-radius: 25px;
+    font-family: $main-font;
+    color: $primary-color;
+    font-size: $secondary-font-size;
+    background-color: $question-background;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0.7;
+        color: white;
+    }
+
+}
+
+.cardName-secondary {
+    color: $primary-color;
 }
 
 .button-container {
@@ -331,4 +370,40 @@ $question-background: #FAFAFA;
 
 .button {
     text-align: center;
+    cursor: pointer;
+}
+
+.cardsContainer-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 440px) {
+
+    .main_container,
+    .header,
+    .footer {
+        min-width: 27.5rem;
+    }
+
+    .cardsContainer {
+        display: none;
+    }
+
+    .cardsContainer-mobile {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2.5rem;
+    }
+
+    .cardImage-mobile {
+        height: 13.6rem;
+    }
+
+    .main_ccontainer-head {
+        display: none;
+    }
+
+    .head {
+        font-size: 25px;
+    }
 }

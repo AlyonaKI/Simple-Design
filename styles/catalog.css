@@ -17,7 +17,7 @@
   color: black;
 }
 .header .header_container .header_logo a span:nth-of-type(2) {
-  color: #bd7048;
+  color: #BD7048;
 }
 .header .header_container .header_logo a span:nth-of-type(3) {
   font-weight: 400;
@@ -47,20 +47,20 @@
   left: 25%;
   width: 50%;
   height: 0.1rem;
-  background-color: #bd7048;
+  background-color: #BD7048;
   transform: translateX(50%);
   transition: opacity 0.3s ease;
   opacity: 0;
 }
 .header .header_container .haeder_nav-list .header_nav-link.active {
-  color: #bd7048;
+  color: #BD7048;
   font-weight: 600;
 }
 .header .header_container .haeder_nav-list .header_nav-link.active::after {
   opacity: 1;
 }
 .header .header_container .haeder_nav-list .header_nav-link:hover {
-  color: #bd7048;
+  color: #BD7048;
 }
 .header .header_container .haeder_nav-list .header_nav-link:hover::after {
   opacity: 1;
@@ -82,7 +82,7 @@
   color: #3b3b3b;
 }
 .header .header_container .header_contact .header_contact-info a:hover {
-  color: #bd7048;
+  color: #BD7048;
 }
 .header .header_container .header_contact .header_contact-info p {
   font-weight: 500;
@@ -108,7 +108,7 @@
   color: black;
 }
 .footer .footer_container .footer_logo a span:nth-of-type(2) {
-  color: #bd7048;
+  color: #BD7048;
 }
 .footer .footer_container .footer_logo a span:nth-of-type(3) {
   font-weight: 400;
@@ -126,14 +126,14 @@
   color: rgba(33, 33, 33, 0.5);
 }
 .footer .footer_container .footer_nav-list .footer_nav-link.active {
-  color: #bd7048;
+  color: #BD7048;
   font-weight: 600;
 }
 .footer .footer_container .footer_nav-list .footer_nav-link.active::after {
   opacity: 1;
 }
 .footer .footer_container .footer_nav-list .footer_nav-link:hover {
-  color: #bd7048;
+  color: #BD7048;
 }
 .footer .footer_container .footer-policy {
   font-weight: 500;
@@ -145,7 +145,7 @@
   color: rgba(33, 33, 33, 0.5);
 }
 .footer .footer_container .footer-policy li a:hover {
-  color: #bd7048;
+  color: #BD7048;
 }
 .footer .footer_container .footer_contact {
   display: flex;
@@ -164,7 +164,7 @@
   color: #3b3b3b;
 }
 .footer .footer_container .footer_contact .footer_contact-info a:hover {
-  color: #bd7048;
+  color: #BD7048;
 }
 .footer .footer_container .footer_contact .footer_contact-info p {
   font-weight: 500;
@@ -234,9 +234,9 @@
   border: 1px solid white;
   border-radius: 25px;
   font-family: "Montserrat Alternates", sans-serif;
-  color: #bd7048;
+  color: #BD7048;
   font-size: 15px;
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   cursor: pointer;
@@ -248,7 +248,7 @@
 }
 
 .cardName-secondary {
-  color: #bd7048;
+  color: #BD7048;
 }
 
 .button-container {
@@ -267,8 +267,8 @@
 
 @media screen and (max-width: 440px) {
   .main_container,
-  .header,
-  .footer {
+.header,
+.footer {
     min-width: 27.5rem;
   }
   .cardsContainer {
@@ -288,4 +288,4 @@
   .head {
     font-size: 25px;
   }
-} /*# sourceMappingURL=catalog.css.map */
+}/*# sourceMappingURL=catalog.css.map */

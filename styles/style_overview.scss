@@ -113,70 +113,130 @@ span {
     }
 }
 
-// p, h2, h3, h4 {
-//     margin: 0;
-// } 
+p, h2, h3, h4 {
+    margin: 0;
+} 
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.rooms__sibtitle {
+    font-size: $main-font-size;
+    font-weight: $medium-font-weight;
+    margin-top: 4rem;
+    margin-bottom: 0.6rem;   
+}
+
+.rooms__title {
+    font-size: $subheading-font-size;
+    font-weight: $subheading-font-weight;
+    color: #262626;
+    margin-bottom: 1.5rem; 
+}
 
 .rooms__title_text {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 2.2fr 3fr;
     grid-template-rows: 1fr;
     column-gap: 2rem;
     align-items: baseline;
     justify-items: start;
+    margin-bottom: 2.5rem;
 
     .rooms__title_text-one {
         grid-column: 1/2;
         grid-row: 1/2;
+        font-size: $main-font-size;
+        font-weight: $main-font-weight;
+        color: $text-color;
     }
 
     .rooms__title_text-two {
+        list-style: none;
         grid-column: 2/3;
         grid-row: 1/2;
     }
+    
+    .rooms__title_text-two span {
+        font-weight: $main-font-weight;
+    }
+
+    .rooms__title_text-two h4 {
+        font-size: $main-font-size;
+        font-weight: $medium-font-weight;
+        color: $text-color;
+    }
 }
 
-button {
-    margin: 20px 0;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-    .rooms__button { @include button($button-text-color,
+button { @include button($button-text-color,
         $secondary-font-size,
         $subheading-font-weight,
         $primary-color);
         display: flex;
         max-width: 9rem;
-        min-width: 170px;
+        min-width: 182px;
         height: 57px;
         align-items: center;
         justify-content: center;
-        gap: 5px;
+        gap: 10px;
+        margin-bottom: 0.7rem;
     }
 
-        a {
-            color: $primary-color;
-        }
+.rooms__price {
+    font-size: $main-font-size;
+    font-weight: $medium-font-weight;
+    color: $text-color;
+    margin-bottom: 4rem;
+}
+
+.receive__title {
+    font-size: $subheading-font-size;
+    font-weight: $secondary-font-weight;
+    color: #262626;
+    margin-bottom: 1.5rem;
+}
+
+.receive__list {
+    font-size: $main-font-size;
+    font-weight: $medium-font-weight;
+    color: #262626;
+    margin-bottom: 1.9rem;
+    padding-left: 1.3rem;
+}
+
+.receive__example_items h4 {
+    font-size: $main-font-size;
+    font-weight: $medium-font-weight;
+    color: $text-color;
+}
+
+.receive__example_items p {
+    font-size: $secondary-font-size;
+    font-weight: $subheading-font-weight;
+    color: #020202;
+    margin-bottom: 0.3rem;
 }
 
 
 .receive__example {
     display: flex;
     align-items: center;
+    margin-bottom: 8rem;
 }
 
 
 .works, .services, .receive, .rooms {
-    margin: 0 7rem;
+    margin: 0 6rem;
 }
 
-.services__title, .works__title {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+.services__title {
+    margin-bottom: 2.5rem;
     text-align: left;
-    font-size: 2rem;
+    font-size: 40px;
     font-weight: $secondary-font-weight;
+    color: #262626;
 }
 
 .services__items {
@@ -189,11 +249,14 @@ button {
 
     a {
         justify-self: start;
-        padding-left: 4rem;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
         text-decoration: none;
-        color: $main-color;
-        font-size: 1rem;
+        color: #353535;
+        font-size: $main-font-size;
         font-weight: $subheading-font-weight;
+        margin-top: 2.4rem;
+        margin-bottom: 3rem;
     }
 
     .services__item-one_link {
@@ -207,46 +270,68 @@ button {
     }
 }
 
+.works__title {
+    margin-top: 2.8rem;
+    margin-bottom: 4.8rem;
+    text-align: left;
+    font-size: 40px;
+    font-weight: $secondary-font-weight;
+    color: #262626;
+}
 
 .works__items {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: 1fr;
     column-gap: 2rem;
-    align-items: center;
+    align-items: start;
     justify-items: center;
+    margin-bottom: 7.6rem;
 
     img {
         justify-self: left;
     }
 
-    // h4 {
-        
-    // }
+    h4 {
+        color: #262626;
+        font-size: $main-font-size;
+        font-weight: $medium-font-weight;
+        margin-bottom: 0.5rem;
+        margin-left: 1.5rem;      
+    }
 
-    // p {
-        
-    // }
+    p {
+        color: $text-color;
+        font-size: $secondary-font-size;
+        font-weight: $medium-font-weight;
+        margin-left: 1.5rem;   
+    }
 
     .works__item-one_text {
         grid-column: 1/2;
         grid-row: 1/2;
+        background-image: url(../images/style_overview/01.svg);
+        background-repeat: no-repeat;
+        background-size: 22%;
     }
 
     .works__item-two_text {
         grid-column: 2/3;
         grid-row: 1/2;
+        background-image: url(../images/style_overview/02.svg);
+        background-repeat: no-repeat;
+        background-size: 22%;
     }
 
     .works__item-three_text {
         grid-column: 3/4;
         grid-row: 1/2;
+        background-image: url(../images/style_overview/03.svg);
+        background-repeat: no-repeat;
+        background-size: 22%;
     }
 
 }
-
-
-
 
 
 .footer {

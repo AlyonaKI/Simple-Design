@@ -102,31 +102,61 @@ span {
   color: rgba(59, 59, 59, 0.5);
 }
 
+p, h2, h3, h4 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.rooms__sibtitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 4rem;
+  margin-bottom: 0.6rem;
+}
+
+.rooms__title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 1.5rem;
+}
+
 .rooms__title_text {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 2.2fr 3fr;
   grid-template-rows: 1fr;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   align-items: baseline;
   justify-items: start;
+  margin-bottom: 2.5rem;
 }
 .rooms__title_text .rooms__title_text-one {
   grid-column: 1/2;
   grid-row: 1/2;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(26, 26, 26, 0.7);
 }
 .rooms__title_text .rooms__title_text-two {
+  list-style: none;
   grid-column: 2/3;
   grid-row: 1/2;
 }
+.rooms__title_text .rooms__title_text-two span {
+  font-weight: 400;
+}
+.rooms__title_text .rooms__title_text-two h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(26, 26, 26, 0.7);
+}
 
 button {
-  margin: 20px 0;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-button .rooms__button {
   max-width: 268px;
   height: 74px;
   background-color: #bd7048;
@@ -141,43 +171,79 @@ button .rooms__button {
   cursor: pointer;
   display: flex;
   max-width: 9rem;
-  min-width: 170px;
+  min-width: 182px;
   height: 57px;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
+  margin-bottom: 0.7rem;
 }
-button .rooms__button:hover {
+
+button:hover {
   color: rgba(0, 0, 0, 0.5);
   opacity: 0.8;
 }
-button .rooms__button a {
+
+button a {
   text-decoration: none;
   color: white;
 }
-button .rooms__button a:hover {
+
+button a:hover {
   color: #9fa28a;
   opacity: 0.8;
 }
-button a {
-  color: #bd7048;
+
+.rooms__price {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(26, 26, 26, 0.7);
+  margin-bottom: 4rem;
 }
+
+.receive__title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 1.5rem;
+}
+
+.receive__list {
+  font-size: 20px;
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 1.9rem;
+  padding-left: 1.3rem;
+}
+
+.receive__example_items h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(26, 26, 26, 0.7);
+}
+
+.receive__example_items p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #020202;
+  margin-bottom: 0.3rem;
 
 .receive__example {
   display: flex;
   align-items: center;
+  margin-bottom: 8rem;
 }
 
 .works, .services, .receive, .rooms {
-  margin: 0 7rem;
+  margin: 0 6rem;
 }
 
-.services__title, .works__title {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.services__title {
+  margin-bottom: 2.5rem;
   text-align: left;
-  font-size: 2rem;
+  font-size: 40px;
   font-weight: 700;
+  color: #262626;
 }
 
 .services__items {
@@ -191,11 +257,14 @@ button a {
 }
 .services__items a {
   justify-self: start;
-  padding-left: 4rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
   text-decoration: none;
-  color: black;
-  font-size: 1rem;
+  color: #353535;
+  font-size: 20px;
   font-weight: 600;
+  margin-top: 2.4rem;
+  margin-bottom: 3rem;
 }
 .services__items .services__item-one_link {
   grid-column: 1/2;
@@ -206,29 +275,61 @@ button a {
   grid-row: 2/3;
 }
 
+.works__title {
+  margin-top: 2.8rem;
+  margin-bottom: 4.8rem;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 700;
+  color: #262626;
+}
+
 .works__items {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: 1fr;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
-  align-items: center;
+  align-items: start;
   justify-items: center;
+  margin-bottom: 7.6rem;
 }
 .works__items img {
   justify-self: left;
 }
+.works__items h4 {
+  color: #262626;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  margin-left: 1.5rem;
+}
+.works__items p {
+  color: rgba(26, 26, 26, 0.7);
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 1.5rem;
+}
 .works__items .works__item-one_text {
   grid-column: 1/2;
   grid-row: 1/2;
+  background-image: url(../images/style_overview/01.svg);
+  background-repeat: no-repeat;
+  background-size: 22%;
 }
 .works__items .works__item-two_text {
   grid-column: 2/3;
   grid-row: 1/2;
+  background-image: url(../images/style_overview/02.svg);
+  background-repeat: no-repeat;
+  background-size: 22%;
 }
 .works__items .works__item-three_text {
   grid-column: 3/4;
   grid-row: 1/2;
+  background-image: url(../images/style_overview/03.svg);
+  background-repeat: no-repeat;
+  background-size: 22%;
 }
 
 .footer {

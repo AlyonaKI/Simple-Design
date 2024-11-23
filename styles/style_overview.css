@@ -12,7 +12,7 @@ header {
 }
 
 span {
-  color: #BD7048;
+  color: #bd7048;
 }
 
 .header_container {
@@ -30,7 +30,7 @@ span {
   color: black;
 }
 .header_container .header_logo a span:nth-of-type(2) {
-  color: #BD7048;
+  color: #bd7048;
 }
 .header_container .header_logo a span:nth-of-type(3) {
   font-weight: 400;
@@ -60,20 +60,20 @@ span {
   left: 25%;
   width: 50%;
   height: 0.1rem;
-  background-color: #BD7048;
+  background-color: #bd7048;
   transform: translateX(50%);
   transition: opacity 0.3s ease;
   opacity: 0;
 }
 .header_container .header_nav-list .header_nav-link.active {
-  color: #BD7048;
+  color: #bd7048;
   font-weight: 600;
 }
 .header_container .header_nav-list .header_nav-link.active::after {
   opacity: 1;
 }
 .header_container .header_nav-list .header_nav-link:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .header_container .header_nav-list .header_nav-link:hover::after {
   opacity: 1;
@@ -95,7 +95,7 @@ span {
   color: #3b3b3b;
 }
 .header_container .header_contact .header_contact-info a:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .header_container .header_contact .header_contact-info p {
   font-weight: 500;
@@ -129,7 +129,7 @@ button {
 button .rooms__button {
   max-width: 268px;
   height: 74px;
-  background-color: #BD7048;
+  background-color: #bd7048;
   border: none;
   color: white;
   border-radius: 100px;
@@ -156,11 +156,11 @@ button .rooms__button a {
   color: white;
 }
 button .rooms__button a:hover {
-  color: #9FA28A;
+  color: #9fa28a;
   opacity: 0.8;
 }
 button a {
-  color: #BD7048;
+  color: #bd7048;
 }
 
 .receive__example {
@@ -248,7 +248,7 @@ button a {
   color: black;
 }
 .footer .footer_container .footer_logo a span:nth-of-type(2) {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer_logo a span:nth-of-type(3) {
   font-weight: 400;
@@ -266,14 +266,14 @@ button a {
   color: rgba(33, 33, 33, 0.5);
 }
 .footer .footer_container .footer_nav-list .footer_nav-link.active {
-  color: #BD7048;
+  color: #bd7048;
   font-weight: 600;
 }
 .footer .footer_container .footer_nav-list .footer_nav-link.active::after {
   opacity: 1;
 }
 .footer .footer_container .footer_nav-list .footer_nav-link:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer-policy {
   font-weight: 500;
@@ -285,7 +285,7 @@ button a {
   color: rgba(33, 33, 33, 0.5);
 }
 .footer .footer_container .footer-policy li a:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer_contact {
   display: flex;
@@ -304,7 +304,7 @@ button a {
   color: #3b3b3b;
 }
 .footer .footer_container .footer_contact .footer_contact-info a:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer_contact .footer_contact-info p {
   font-weight: 500;

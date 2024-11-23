@@ -13,17 +13,20 @@
   }
 }
 @keyframes tostart {
+  0% {
+    transform: translateX(-400%);
+  }
+  25% {
+    transform: translateX(-300%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
   75% {
-    left: 0;
+    transform: translateX(-100%);
   }
-  95% {
-    left: -300%;
-  }
-  98% {
-    left: -300%;
-  }
-  99% {
-    left: 0;
+  100% {
+    transform: translateX(0%);
   }
 }
 @keyframes snap {
@@ -98,27 +101,30 @@ li {
   scroll-behavior: smooth;
   -ms-scroll-snap-type: x mandatory;
   scroll-snap-type: x mandatory;
-  scroll-snap-type: x mandatory;
 }
 
 .carousel__slide {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  background-image: url(../images/about_us/carousel.svg);
   background-size: cover;
-  border-radius: 20px;
-  counter-increment: item;
+  background-position: center;
 }
 
-.carousel__slide:before {
-  content: counter(item);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -40%, 70px);
-  color: white;
-  font-size: 2em;
+#carousel__slide1 {
+  background-image: url(../images/about_us/carousel.svg);
+}
+
+#carousel__slide2 {
+  background-image: url(../images/about_us/carousel2.jpg);
+}
+
+#carousel__slide3 {
+  background-image: url(../images/about_us/carousel3.jpg);
+}
+
+#carousel__slide4 {
+  background-image: url(../images/style_overview/carousel_img.svg);
 }
 
 .carousel__snapper {
@@ -146,6 +152,7 @@ li {
     animation-name: tostart, snap;
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .carousel__snapper {
     -webkit-animation-name: none;

@@ -15,7 +15,7 @@
     <header class="header">
       <div class="header_container">
         <div class="header_logo">
-          <a href="#" class="header_logo-link"
+          <a href="./index.html" class="header_logo-link"
               ><span>Simple</span> <span>Design</span> <br />
               <span>дизайн интерьеров</span></a
             >
@@ -40,7 +40,7 @@
                   >О нас</a>
             </li>
             <li class="header_nav-item">
-                <a href="#" target="_blank" class="header_nav-link">Цены</a>
+                <a href="./prices.html" target="_blank" class="header_nav-link">Цены</a>
             </li>
           </ul>
         </div>
@@ -78,7 +78,37 @@
           <div class="team_info-icon"></div>
           <h2 class="team_info-text">В команде Simple Design <br><span>21 человек</span></h2>
         </div>
-        <div class="team_pictures">каруселька</div>
+        <div class="team_pictures">
+
+          <div class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+                <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                    </div>
+                </li>
+                <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                </li>
+            </ol>
+    
+          </div>
+
+
+        </div>
       </section>
       <section class="founder">
         <div class="founder_image"><img src="../images/about_us/founder.svg" alt="Юрий Черепанов"></div>

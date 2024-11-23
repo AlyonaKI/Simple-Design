@@ -470,6 +470,12 @@ body {
   body {
     max-width: 768px;
   }
+  body .header_nav {
+    display: none;
+  }
+  body .footer_nav {
+    display: none;
+  }
   body .options {
     margin: 2rem 0;
     grid-template-rows: 4rem auto;

@@ -483,6 +483,14 @@ body {
   body {
     max-width: 768px;
 
+    .header_nav {
+      display: none;
+    }
+
+    .footer_nav {
+      display: none;
+    }
+
     .options {
       margin: 2rem 0;
       grid-template-rows: 4rem auto;

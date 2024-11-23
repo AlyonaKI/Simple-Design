@@ -18,8 +18,6 @@ $page-background: #E5E5E5;
 
 
 
-
-
 @keyframes tonext {
     75% {
         left: 0;
@@ -38,23 +36,25 @@ $page-background: #E5E5E5;
     }
 }
 
+
 @keyframes tostart {
+    0% {
+        transform: translateX(-400%);
+    }
+    25% {
+        transform: translateX(-300%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
     75% {
-        left: 0;
+        transform: translateX(-100%);
     }
-
-    95% {
-        left: -300%;
-    }
-
-    98% {
-        left: -300%;
-    }
-
-    99% {
-        left: 0;
+    100% {
+        transform: translateX(0%);
     }
 }
+
 
 @keyframes snap {
     96% {
@@ -129,17 +129,33 @@ li {
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    scroll-padding: 0 0;
 }
+
 
 .carousel__slide {
     position: relative;
     flex: 0 0 100%;
     width: 100%;
-    background-image: url(../images/style_overview/carousel_img.svg);
     background-size: cover;
-
+    background-position: center;
 }
 
+#carousel__slide1 {
+    background-image: url(../images/about_us/carousel.svg);
+}
+
+#carousel__slide2 {
+    background-image: url(../images/about_us/carousel2.jpg);
+}
+
+#carousel__slide3 {
+    background-image: url(../images/about_us/carousel3.jpg);
+}
+
+#carousel__slide4 {
+    background-image: url(../images/style_overview/carousel_img.svg);
+}
 
 .carousel__snapper {
     position: absolute;
@@ -150,17 +166,16 @@ li {
     scroll-snap-align: center;
 }
 
-@media (hover: hover) {
-    .carousel__snapper {
+.carousel__snapper {
         animation-name: tonext, snap;
         animation-timing-function: ease;
         animation-duration: 4s;
         animation-iteration-count: infinite;
-    }
+}
 
-    .carousel__slide:last-child .carousel__snapper {
+.carousel__slide:last-child .carousel__snapper {
         animation-name: tostart, snap;
-    }
+        animation-duration: 10s;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -173,7 +188,6 @@ li {
 .carousel:focus-within .carousel__snapper {
     animation-name: none;
 }
-
 
 .carousel::before,
 .carousel::after,
@@ -208,7 +222,6 @@ li {
     background-size: 0.75rem 0.75rem;
     background-repeat: no-repeat;
     background-position: center center;
-    // color: #fff;
     font-size: 2.5rem;
     line-height: 4rem;
     text-align: center;

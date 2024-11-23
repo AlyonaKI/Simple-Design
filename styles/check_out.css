@@ -408,8 +408,8 @@ body {
     padding: 2rem;
   }
   .order-title,
-.extras-title,
-.styles-title {
+  .extras-title,
+  .styles-title {
     font-size: 25px;
     font-weight: 600;
   }
@@ -429,7 +429,7 @@ body {
     font-size: 10px;
   }
   .option_plan-title,
-.option_project-title {
+  .option_project-title {
     justify-content: flex-start;
   }
   .option_plan-subtitle {
@@ -452,14 +452,14 @@ body {
     justify-content: space-between;
   }
   [type=checkbox]:not(:checked) + label:after,
-[type=checkbox]:checked + label:after {
+  [type=checkbox]:checked + label:after {
     content: url(../images/check_out/Vector-mini.svg);
     border: 1.5px solid black;
     width: 1.1rem;
     height: 1.1rem;
   }
   [type=checkbox]:not(:checked) + label:before,
-[type=checkbox]:checked + label:before {
+  [type=checkbox]:checked + label:before {
     width: 1.1rem;
     height: 1.1rem;
   }
@@ -492,8 +492,8 @@ body {
     font-size: 15px;
   }
   .leaveOrder,
-.pay,
-.payByParts {
+  .pay,
+  .payByParts {
     min-width: 17rem;
     height: 4rem;
   }

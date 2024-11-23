@@ -59,14 +59,14 @@ body {
 
 .option_plan-subtitle,
 .first_title-subtitle {
-  color: #BD7048;
+  color: #bd7048;
   font-weight: 600;
   font-size: 20px;
   margin: 0;
 }
 
 .option_project {
-  border: solid #BD7048 1px;
+  border: solid #bd7048 1px;
   border-radius: 13px;
   min-width: 32rem;
 }
@@ -83,6 +83,7 @@ body {
 .option_first-details {
   font-size: 15px;
   color: rgba(37, 37, 37, 0.5);
+  padding-left: 5rem;
   padding-left: 5rem;
 }
 
@@ -112,20 +113,20 @@ body {
 
 .active {
   margin: 0;
-  color: #BD7048;
+  color: #bd7048;
   font-weight: 400;
 }
 
 /* Base for label styling */
-[type=checkbox]:not(:checked),
-[type=checkbox]:checked {
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
   position: absolute;
   left: 0;
   opacity: 0.01;
 }
 
-[type=checkbox]:not(:checked) + label,
-[type=checkbox]:checked + label {
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
   position: relative;
   padding-left: 2.3em;
   font-size: 1.05em;
@@ -133,8 +134,8 @@ body {
 }
 
 /* checkbox aspect */
-[type=checkbox]:not(:checked) + label:before,
-[type=checkbox]:checked + label:before {
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -142,14 +143,14 @@ body {
   width: 1.4em;
   height: 1.4em;
   border: 1.5px solid rgba(37, 37, 37, 0.5);
-  background: #FFF;
+  background: #fff;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 0 rgba(203, 34, 237, 0.2);
   transition: all 0.275s;
 }
 
 /* checked mark aspect */
-[type=checkbox]:not(:checked) + label:after,
-[type=checkbox]:checked + label:after {
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
   content: url(../images/check_out/Vector.svg);
   position: absolute;
   text-align: center;
@@ -161,16 +162,16 @@ body {
   height: 1.4em;
   line-height: 0;
   transition: all 0.2s;
-  color: #BD7048;
+  color: #bd7048;
 }
 
 /* checked mark aspect changes */
-[type=checkbox]:not(:checked) + label:after {
+[type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
   transform: scale(0) rotate(45deg);
 }
 
-[type=checkbox]:checked + label:after {
+[type="checkbox"]:checked + label:after {
   opacity: 1;
   transform: scale(1) rotate(0);
 }
@@ -206,7 +207,7 @@ body {
 }
 
 .delete {
-  color: #BD7048;
+  color: #bd7048;
   cursor: pointer;
 }
 
@@ -230,9 +231,7 @@ body {
   grid-template-rows: 10% 45% 45%;
   margin: 0 auto;
   gap: 1rem;
-  background-color: #FFF6F1;
-  padding: 2rem;
-  border-radius: 10px;
+  background-color: #fff6f1;
 }
 
 .order_collect-line1 {
@@ -250,7 +249,7 @@ body {
   grid-column: 1/2;
   display: flex;
   align-items: center;
-  color: #BD7048;
+  color: #bd7048;
   font-size: 20px;
   font-family: "Montserrat Alternates", sans-serif;
 }
@@ -288,9 +287,9 @@ body {
 }
 
 .leaveOrder {
-  min-width: 26.3rem;
-  height: 4rem;
-  background-color: #BD7048;
+  min-width: 421px;
+  height: 64px;
+  background-color: #bd7048;
   border: none;
   color: white;
   border-radius: 100px;
@@ -308,11 +307,11 @@ body {
 }
 
 .pay {
-  min-width: 26.3rem;
-  height: 4rem;
-  background-color: #FFDBC9;
+  min-width: 421px;
+  height: 64px;
+  background-color: #ffdbc9;
   border: none;
-  color: #BD7048;
+  color: #bd7048;
   border-radius: 100px;
   text-align: center;
   text-decoration: none;
@@ -329,9 +328,9 @@ body {
 }
 
 .payByParts {
-  min-width: 26.3rem;
-  height: 4rem;
-  background-color: #F14635;
+  min-width: 421px;
+  height: 64px;
+  background-color: #f14635;
   border: none;
   color: white;
   border-radius: 100px;
@@ -356,7 +355,7 @@ body {
 }
 
 .offer_link {
-  color: #BD7048;
+  color: #bd7048;
   text-decoration: none;
   cursor: pointer;
 }
@@ -451,20 +450,20 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  [type=checkbox]:not(:checked) + label:after,
-  [type=checkbox]:checked + label:after {
+  [type="checkbox"]:not(:checked) + label:after,
+  [type="checkbox"]:checked + label:after {
     content: url(../images/check_out/Vector-mini.svg);
     border: 1.5px solid black;
     width: 1.1rem;
     height: 1.1rem;
   }
-  [type=checkbox]:not(:checked) + label:before,
-  [type=checkbox]:checked + label:before {
+  [type="checkbox"]:not(:checked) + label:before,
+  [type="checkbox"]:checked + label:before {
     width: 1.1rem;
     height: 1.1rem;
   }
   .option_project {
-    border: solid #BD7048 1px;
+    border: solid #bd7048 1px;
     border-radius: 13px;
     min-width: 18.5rem;
   }
@@ -500,4 +499,4 @@ body {
   .suborder_buttons-text {
     font-size: 15px;
   }
-}/*# sourceMappingURL=check_out.css.map */
+} /*# sourceMappingURL=check_out.css.map */

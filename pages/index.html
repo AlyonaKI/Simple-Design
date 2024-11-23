@@ -17,51 +17,65 @@
     <header class="header">
       <div class="header_container">
         <div class="header_logo">
-          <a href="#" class="header_logo-link"
-            ><span>Simple</span> <span>Design</span> <br />
-            <span>дизайн интерьеров</span></a
-          >
+          <a href="#" class="header_logo-link">
+            <span>Simple</span> <span>Design</span> <br />
+            <span>дизайн интерьеров</span>
+          </a>
         </div>
-        <div class="header_nav">
-          <ul class="header_nav-list">
-            <li class="header_nav-item">
-              <a
-                href="./index.html"
-                target="_blank"
-                class="header_nav-link active"
-                >Главная</a
-              >
-            </li>
-            <li class="header_nav-item">
-              <a href="#" target="_blank" class="header_nav-link">Тест</a>
-            </li>
-            <li class="header_nav-item">
-              <a href="./catalog.html" target="_blank" class="header_nav-link"
-                >Каталог</a
-              >
-            </li>
-            <li class="header_nav-item">
-              <a href="./about_us.html" target="_blank" class="header_nav-link"
-                >О нас</a
-              >
-            </li>
-            <li class="header_nav-item">
-              <a href="#" target="_blank" class="header_nav-link">Цены</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header_contact">
-          <div class="header_contact-icon">
-            <a href="tel:+77005053000" class="header_contact-phone"
-              ><img src="../images/Vector.svg" alt=""
-            /></a>
+        <!-- Чекбокс для управления бургер-меню -->
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox" />
+        <label for="burger-toggle" class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <!-- Навигация и контакты -->
+        <div class="header_nav-contact">
+          <div class="header_nav">
+            <ul class="header_nav-list">
+              <li class="header_nav-item">
+                <a
+                  href="./index.html"
+                  target="_blank"
+                  class="header_nav-link active"
+                  >Главная</a
+                >
+              </li>
+              <li class="header_nav-item">
+                <a href="#" target="_blank" class="header_nav-link">Тест</a>
+              </li>
+              <li class="header_nav-item">
+                <a href="./catalog.html" target="_blank" class="header_nav-link"
+                  >Каталог</a
+                >
+              </li>
+              <li class="header_nav-item">
+                <a
+                  href="./about_us.html"
+                  target="_blank"
+                  class="header_nav-link"
+                  >О нас</a
+                >
+              </li>
+              <li class="header_nav-item">
+                <a href="#" target="_blank" class="header_nav-link">Цены</a>
+              </li>
+            </ul>
           </div>
-          <div class="header_contact-info">
-            <a href="tel:+" class="header_contact-phone">+7 700 505 3000</a>
-            <p class="header_contact-hours">9:00 до 18:00</p>
+          <div class="header_contact">
+            <div class="header_contact-icon">
+              <a href="tel:+77005053000" class="header_contact-phone">
+                <img src="../images/Vector.svg" alt="" />
+              </a>
+            </div>
+            <div class="header_contact-info">
+              <a href="tel:+" class="header_contact-phone">+7 700 505 3000</a>
+              <p class="header_contact-hours">9:00 до 18:00</p>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="header_banner">
         <div class="header_cart-widget">
           <div class="cart-widget_icon">
@@ -205,13 +219,15 @@
                   >Оставить заявку</a
                 >
               </div>
-              <div class="layout_pdf">
-                <a href="#" target="_blank" class="layout_pdf-link"
-                  ><img src="../images/pdf_icon.svg" alt=""
-                /></a>
-              </div>
-              <div class="layout_example">
-                <a href="#" class="layout_example-link">Посмотреть пример</a>
+              <div class="layout_pdf_example">
+                <div class="layout_pdf">
+                  <a href="#" target="_blank" class="layout_pdf-link"
+                    ><img src="../images/pdf_icon.svg" alt=""
+                  /></a>
+                </div>
+                <div class="layout_example">
+                  <a href="#" class="layout_example-link">Посмотреть пример</a>
+                </div>
               </div>
             </div>
           </div>
@@ -276,13 +292,15 @@
                   >Оставить заявку</a
                 >
               </div>
-              <div class="layout1_pdf">
-                <a href="#" target="_blank" class="layout1_pdf-link"
-                  ><img src="../images/pdf_icon.svg" alt=""
-                /></a>
-              </div>
-              <div class="layout1_example">
-                <a href="#" class="layout1_example-link">Посмотреть пример</a>
+              <div class="layout1_pdf_example">
+                <div class="layout1_pdf">
+                  <a href="#" target="_blank" class="layout1_pdf-link"
+                    ><img src="../images/pdf_icon.svg" alt=""
+                  /></a>
+                </div>
+                <div class="layout1_example">
+                  <a href="#" class="layout1_example-link">Посмотреть пример</a>
+                </div>
               </div>
             </div>
           </div>
@@ -305,18 +323,55 @@
           </div>
         </div>
       </div>
-      <div class="main_test">
-        <div class="test_block">
-          <h4 class="test_title">Давайте определим, что вам нравится</h4>
-          <p class="test_text">
-            Пройдите короткий тест и мы покажем подходящие вам стилевые решения
-          </p>
-          <div class="test_button">
-            <a href="#" target="_blank" class="test_button-link">Пройти тест</a>
+      <div class="main_gallery">
+        <h3 class="gallery_title">Дизайн комнат</h3>
+        <h5 class="gallery_subtitle">
+          Выбирая дизайн комнаты, вы получаете смету со списком всех предметов в
+          интерьере, названиями, артикулами, цветом стен и так далее.
+        </h5>
+        <div class="static-gallery_title">
+          <h5>Гостиные</h5>
+          <div class="gallery-rectangle"></div>
+        </div>
+        <div class="static-gallery">
+          <div class="gallery-item">
+            <div class="scrollable-content">
+              <img src="../images/index/image 11.jpg" alt="Акварель" />
+              <img src="../images/index/image 12.jpg" alt="Акварель 2" />
+              <img src="../images/index/image 13.jpg" alt="Акварель 3" />
+            </div>
+            <div class="gallery-item_title">
+              <p class="gallery-title">Акварель</p>
+              <div class="select-button"></div>
+              <div>
+                <img src="../images/сatalog/" alt="" />
+              </div>
+              <div>
+                <a href="./catalog.html" target="_blank">Выбрать</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="scrollable-content">
+              <img src="../images/index/image 12.jpg" alt="Ира" />
+              <img src="../images/index/image 13.jpg" alt="Ира 2" />
+              <img src="../images/index/image 11.jpg" alt="Ира 3" />
+            </div>
+            <p class="gallery-title">Ира</p>
+            <button class="select-button">Выбрать</button>
+          </div>
+
+          <div class="gallery-item">
+            <div class="scrollable-content">
+              <img src="../images/index/image 13.jpg" alt="Нурс" />
+              <img src="../images/index/image 11.jpg" alt="Нурс 2" />
+              <img src="../images/index/image 12.jpg" alt="Нурс 3" />
+            </div>
+            <p class="gallery-title">Нурс</p>
+            <button class="select-button">Выбрать</button>
           </div>
         </div>
-      </div>
-      <div class="main_gallery">
         <div class="static-gallery">
           <div class="gallery-item">
             <div class="scrollable-content">
@@ -346,6 +401,134 @@
             </div>
             <p class="gallery-title">Нурс</p>
             <button class="select-button">Выбрать</button>
+          </div>
+        </div>
+        <div class="static-gallery">
+          <div class="gallery-item">
+            <div class="scrollable-content">
+              <img src="../images/index/image 11.jpg" alt="Акварель" />
+              <img src="../images/index/image 12.jpg" alt="Акварель 2" />
+              <img src="../images/index/image 13.jpg" alt="Акварель 3" />
+            </div>
+            <p class="gallery-title">Акварель</p>
+            <button class="select-button">Выбрать</button>
+          </div>
+
+          <div class="gallery-item">
+            <div class="scrollable-content">
+              <img src="../images/index/image 12.jpg" alt="Ира" />
+              <img src="../images/index/image 13.jpg" alt="Ира 2" />
+              <img src="../images/index/image 11.jpg" alt="Ира 3" />
+            </div>
+            <p class="gallery-title">Ира</p>
+            <button class="select-button">Выбрать</button>
+          </div>
+
+          <div class="gallery-item">
+            <div class="scrollable-content">
+              <img src="../images/index/image 13.jpg" alt="Нурс" />
+              <img src="../images/index/image 11.jpg" alt="Нурс 2" />
+              <img src="../images/index/image 12.jpg" alt="Нурс 3" />
+            </div>
+            <p class="gallery-title">Нурс</p>
+            <button class="select-button">Выбрать</button>
+          </div>
+        </div>
+      </div>
+      <div class="main_test">
+        <div class="test_block">
+          <h4 class="test_title">Давайте определим, что вам нравится</h4>
+          <p class="test_text">
+            Пройдите короткий тест и мы покажем подходящие вам стилевые решения
+          </p>
+          <div class="test_button">
+            <a href="#" target="_blank" class="test_button-link">Пройти тест</a>
+          </div>
+        </div>
+      </div>
+      <div class="main_faq-accordion">
+        <h3 class="faq-accordion__title">Часто задаваемые вопросы</h3>
+        <div class="faq-accordion__item">
+          <input type="checkbox" id="item-1" class="accordion__checkbox" />
+          <label for="item-1" class="accordion__header">
+            <span class="accordion__header-icon">+</span>
+            <span class="accordion__header-question">Вопрос</span>
+          </label>
+          <div class="accordion__content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada
+              nibh at ornare turpis sit lacus, in viverra volutpat. Id sed quam
+              consectetur condimentum tellus pellentesque a, convallis metus.
+              Hac dui sit cursus ac id aliquet. A convallis suspendisse in nulla
+              risus, senectus vitae. Condimentum in aliquet egestas aliquam at
+              eu. Id bibendum iaculis netus ipsum quis amet lectus nisi mattis.
+              Sit porttitor a vulputate aliquam elementum, odio lacus.
+            </p>
+          </div>
+        </div>
+        <div class="faq-accordion__item">
+          <input type="checkbox" id="item-2" class="accordion__checkbox" />
+          <label for="item-2" class="accordion__header">
+            <span class="accordion__header-icon">+</span>
+            <span class="accordion__header-question">Вопрос</span>
+          </label>
+          <div class="accordion__content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada
+              nibh at ornare turpis sit lacus, in viverra volutpat. Id sed quam
+              consectetur condimentum tellus pellentesque a, convallis metus.
+              Hac dui sit cursus ac id aliquet.
+            </p>
+          </div>
+        </div>
+        <div class="faq-accordion__item">
+          <input type="checkbox" id="item-3" class="accordion__checkbox" />
+          <label for="item-3" class="accordion__header">
+            <span class="accordion__header-icon">+</span>
+            <span class="accordion__header-question">Вопрос</span>
+          </label>
+          <div class="accordion__content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada
+              nibh at ornare turpis sit lacus, in viverra volutpat. Id sed quam
+              consectetur condimentum tellus pellentesque a, convallis metus.
+              Hac dui sit cursus ac id aliquet. A convallis suspendisse in nulla
+              risus, senectus vitae. Condimentum in aliquet egestas aliquam at
+              eu. Id bibendum iaculis netus ipsum quis amet lectus nisi mattis.
+              Sit porttitor a vulputate aliquam elementum, odio lacus.
+            </p>
+          </div>
+        </div>
+        <div class="faq-accordion__item">
+          <input type="checkbox" id="item-4" class="accordion__checkbox" />
+          <label for="item-4" class="accordion__header">
+            <span class="accordion__header-icon">+</span>
+            <span class="accordion__header-question">Вопрос</span>
+          </label>
+          <div class="accordion__content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada
+              nibh at ornare turpis sit lacus, in viverra volutpat. Id sed quam
+              consectetur condimentum tellus pellentesque a, convallis metus.
+            </p>
+          </div>
+        </div>
+        <div class="faq-accordion__item">
+          <input type="checkbox" id="item-5" class="accordion__checkbox" />
+          <label for="item-5" class="accordion__header">
+            <span class="accordion__header-icon">+</span>
+            <span class="accordion__header-question">Вопрос</span>
+          </label>
+          <div class="accordion__content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada
+              nibh at ornare turpis sit lacus, in viverra volutpat. Id sed quam
+              consectetur condimentum tellus pellentesque a, convallis metus.
+              Hac dui sit cursus ac id aliquet. A convallis suspendisse in nulla
+              risus, senectus vitae. Condimentum in aliquet egestas aliquam at
+              eu. Id bibendum iaculis netus ipsum quis amet lectus nisi mattis.
+              Sit porttitor a vulputate aliquam elementum, odio lacus.
+            </p>
           </div>
         </div>
       </div>

@@ -363,11 +363,22 @@ body {
     }
 }
 
-.accordion__checkbox:checked + .accordion__header-icon {
-    transform: rotate(45deg);
-    color: $primary-color;
-    border-color: $primary-color;
-    background: $question-background;
+.accordion__checkbox:checked + .accordion__header .accordion__header-icon {
+  transform: rotate(45deg);
+  color: $primary-color;
+  border-color: $primary-color;
+  background: $question-background;
+}
+
+.accordion__checkbox:checked + .accordion__header .accordion__header-icon {
+  transform: rotate(45deg);
+  color: $primary-color;
+  border-color: $primary-color;
+  background: $question-background;
+}
+
+.accordion__checkbox:checked + .accordion__header .accordion__header-question {
+  color: $primary-color;
 }
 
 .accordion__checkbox:checked ~ .accordion__content {

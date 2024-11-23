@@ -340,7 +340,6 @@ li {
 }
 
 .carousel__viewport {
-  max-width: 98%;
   position: absolute;
   top: 0;
   right: 7rem;
@@ -358,7 +357,6 @@ li {
   position: relative;
   flex: 0 0 100%;
   max-width: 1400px;
-  // width: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -477,10 +475,6 @@ li {
 video {
     width: 100%;
 }
-
-// video::-webkit-media-controls-enclosure {
-//   display:none;
-// }
 
 .footer {
     margin-top: 3rem;
@@ -632,6 +626,21 @@ video {
       grid-template-columns: 45% 1fr;
     }
 
+    .carousel__viewport {
+      right: 3rem;
+      left: 3rem;
+    }
+
+    .carousel::before,
+    .carousel__prev {
+      left: 1.5rem;
+    }
+
+    .carousel::after,
+    .carousel__next {
+      right: 1.5rem;
+    }
+
     .projects_info {
       grid-template-columns: 1fr 45%;
     }
@@ -759,6 +768,37 @@ video {
           grid-column: 1 / 2;
           justify-self: center;
         }
+      }
+
+    .carousel__viewport {
+        right: 2rem;
+        left: 2rem;
+      }
+      
+    .carousel::before,
+    .carousel::after,
+    .carousel__prev,
+    .carousel__next {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+    .carousel::before,
+    .carousel__prev {
+        left: 1rem;
+      }
+  
+    .carousel::after,
+    .carousel__next {
+        right: 1rem;
+      }
+
+    .carousel::before {
+        background-size: 30%;
+      }
+      
+    .carousel::after {
+        background-size: 30%;
       }
     
     .founder {

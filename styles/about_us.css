@@ -306,7 +306,6 @@ h2 {
 }
 
 .carousel__viewport {
-  max-width: 98%;
   position: absolute;
   top: 0;
   right: 7rem;
@@ -564,6 +563,18 @@ video {
   body .team_info {
     grid-template-columns: 45% 1fr;
   }
+  body .carousel__viewport {
+    right: 3rem;
+    left: 3rem;
+  }
+  body .carousel::before,
+  body .carousel__prev {
+    left: 1.5rem;
+  }
+  body .carousel::after,
+  body .carousel__next {
+    right: 1.5rem;
+  }
   body .projects_info {
     grid-template-columns: 1fr 45%;
   }
@@ -662,6 +673,31 @@ video {
   body .team_info .team_info-text {
     grid-column: 1/2;
     justify-self: center;
+  }
+  body .carousel__viewport {
+    right: 2rem;
+    left: 2rem;
+  }
+  body .carousel::before,
+  body .carousel::after,
+  body .carousel__prev,
+  body .carousel__next {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  body .carousel::before,
+  body .carousel__prev {
+    left: 1rem;
+  }
+  body .carousel::after,
+  body .carousel__next {
+    right: 1rem;
+  }
+  body .carousel::before {
+    background-size: 30%;
+  }
+  body .carousel::after {
+    background-size: 30%;
   }
   body .founder {
     max-width: 420px;

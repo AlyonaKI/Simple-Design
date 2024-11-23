@@ -178,17 +178,14 @@ button {
   gap: 10px;
   margin-bottom: 0.7rem;
 }
-
 button:hover {
   color: rgba(0, 0, 0, 0.5);
   opacity: 0.8;
 }
-
 button a {
   text-decoration: none;
   color: white;
 }
-
 button a:hover {
   color: #9fa28a;
   opacity: 0.8;
@@ -227,6 +224,7 @@ button a:hover {
   font-weight: 600;
   color: #020202;
   margin-bottom: 0.3rem;
+}
 
 .receive__example {
   display: flex;

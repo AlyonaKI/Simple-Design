@@ -17,39 +17,80 @@ span {
     color: $primary-color;
 }
 
-.header_container {
-      padding: 2rem 5rem; //40px 100px
-      display: flex;
-      justify-content: space-between;
-      font-weight: $subheading-font-weight;
-      font-size: 0.75rem;
-      box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
+  .header_container {
+    font-weight: $subheading-font-weight;
+    font-size: 0.75rem; //15px
+    box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
+    padding: 2rem 5rem; //40px 100px
+    display: flex;
+    justify-content: space-between;
+    position: relative; // Добавлено для позиционирования меню
+    a {
+      text-decoration: none;
+    }
+
+    .header_logo {
       a {
-        text-decoration: none;
-      }
-  
-      .header_logo {
-        a {
-          span:nth-of-type(1) {
-            color: $main-color;
-          }
-          span:nth-of-type(2) {
-            color: $primary-color;
-          }
-          span:nth-of-type(3) {
-            font-weight: $main-font-weight;
-            color: $main-color;
-            font-size: 0.5rem; //10px
-          }
+        span:nth-of-type(1) {
+          color: $main-color;
+        }
+        span:nth-of-type(2) {
+          color: $primary-color;
+        }
+        span:nth-of-type(3) {
+          font-weight: $main-font-weight;
+          color: $main-color;
+          font-size: 0.5rem; //10px
         }
       }
-  
+    }
+    .burger-checkbox {
+      display: none; // Скрываем чекбокс
+    }
+
+    .burger-menu {
+      display: none; // Скрываем по умолчанию
+      flex-direction: column;
+      justify-content: space-between;
+      width: 37px;
+      height: 37px;
+      cursor: pointer;
+      span {
+        display: block;
+        background-color: #000;
+        height: 6px;
+        width: 100%;
+        margin: 4px 0;
+        transition: all 0.3s ease;
+        &:nth-child(1),
+        &:nth-child(3) {
+          /* Верхняя и нижняя линии */
+          width: 25px;
+          margin-left: 10px; /* Длина короче средней */
+        }
+
+        &:nth-child(2) {
+          /* Средняя линия */
+          width: 40px;
+          margin-left: 0; /* Полная ширина */
+        }
+      }
+    }
+    .header_nav-contact {
+      display: flex; // Контейнер для совместного отображения навигации и контактов
+      justify-content: space-around; // Распределение пространства
+      align-items: center; // Центровка по вертикали
+      width: 80%;
+      .header_nav {
+        display: flex;
+        margin-left: 3rem;
+      }
+
       .header_nav-list {
         display: flex;
         list-style: none;
         font-weight: $main-font-weight;
         li {
-          //color: rgb(0, 0, 0, 0.5);
           padding: 0.4rem 1rem; //8px 20px
           a {
             color: rgb(0, 0, 0, 0.5);
@@ -86,9 +127,11 @@ span {
           }
         }
       }
-  
+
       .header_contact {
         display: flex;
+        align-items: center;
+        margin-left: 4rem;
         .header_contact-icon {
           padding-top: 0.2rem; //4px
           padding-right: 1rem; //20px
@@ -111,6 +154,7 @@ span {
         }
       }
     }
+  }
 
 
 .banner {
@@ -340,7 +384,6 @@ li {
 }
 
 .carousel__viewport {
-  max-width: 98%;
   position: absolute;
   top: 0;
   right: 7rem;
@@ -358,7 +401,6 @@ li {
   position: relative;
   flex: 0 0 100%;
   max-width: 1400px;
-  // width: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -478,10 +520,6 @@ video {
     width: 100%;
 }
 
-// video::-webkit-media-controls-enclosure {
-//   display:none;
-// }
-
 .footer {
     margin-top: 3rem;
     font-size: 0.75rem; //15px
@@ -588,6 +626,66 @@ video {
   body {
     max-width: 768px;
 
+    .header_container {
+      .burger-menu {
+        display: flex;
+      }
+
+      .header_nav-contact {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: white;
+        position: absolute;
+        padding: 0 4rem;
+        top: 100%;
+        right: 0%;
+        width: 50%;
+        font-size: large;
+        border-radius: 0 0 0 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.475);
+        z-index: 10;
+        .header_nav {
+          .header_nav-list {
+            flex-direction: column;
+            align-items: flex-end;
+
+            .header_nav-item {
+              margin: 0;
+              margin-bottom: 1rem;
+              text-align: center;
+            }
+          }
+        }
+        .header_contact {
+          .header_contact-info {
+            a,
+            p {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .burger-checkbox:checked ~ .header_nav-contact {
+        display: flex;
+        width: 10rem;
+      }
+
+      .burger-checkbox:checked + .burger-menu span:nth-child(1) {
+        transform: rotate(45deg) translate(12px, 6px);
+      }
+
+      .burger-checkbox:checked + .burger-menu span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .burger-checkbox:checked + .burger-menu span:nth-child(3) {
+        transform: rotate(-45deg) translate(11px, -5px);
+      }
+    }
+  }
+
     .banner {
 
           h1 {
@@ -632,6 +730,21 @@ video {
       grid-template-columns: 45% 1fr;
     }
 
+    .carousel__viewport {
+      right: 3rem;
+      left: 3rem;
+    }
+
+    .carousel::before,
+    .carousel__prev {
+      left: 1.5rem;
+    }
+
+    .carousel::after,
+    .carousel__next {
+      right: 1.5rem;
+    }
+
     .projects_info {
       grid-template-columns: 1fr 45%;
     }
@@ -667,6 +780,11 @@ video {
           padding-right: 1.2rem;
       }
     }
+
+    .footer {
+      .footer_nav {
+        display: none;
+      }
   }
 }
 
@@ -676,15 +794,13 @@ video {
     max-width: 440px;
     
 
-  .header_nav, .header_contact-icon {
-      display: none; 
-    }
-  
-    .header_contact-info {
-        a, p {
-          display: none;
-        }
+    .header_container {
+      padding: 2rem;
+
+      .burger-checkbox:checked ~ .header_nav-contact {
+        width: 12rem;
       }
+    }
 
     .banner {
       .banner_top {
@@ -760,6 +876,37 @@ video {
           justify-self: center;
         }
       }
+
+    .carousel__viewport {
+        right: 2rem;
+        left: 2rem;
+      }
+      
+    .carousel::before,
+    .carousel::after,
+    .carousel__prev,
+    .carousel__next {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+    .carousel::before,
+    .carousel__prev {
+        left: 1rem;
+      }
+  
+    .carousel::after,
+    .carousel__next {
+        right: 1rem;
+      }
+
+    .carousel::before {
+        background-size: 30%;
+      }
+      
+    .carousel::after {
+        background-size: 30%;
+      }
     
     .founder {
         max-width: 420px;
@@ -809,5 +956,10 @@ video {
           padding: 0 2rem;
         }
     }
+    .footer {
+      .footer-policy {
+        display: none;
+      }
+    }
+    }
   }
-}

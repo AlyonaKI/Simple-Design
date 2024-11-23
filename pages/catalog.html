@@ -1,469 +1,701 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/catalog.css" />
+    <link rel="shortcut icon" href="../images/favicon.svg" type="svg/xml" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Каталог</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/catalog.css">
-  <link rel="shortcut icon" href="../images/favicon.svg" type="svg/xml">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <title>Каталог</title>
-</head>
-
-<body>
-
-  <header class="header">
-    <div class="header_container">
-      <div class="header_logo">
-        <a href="#" class="header_logo-link"><span>Simple</span> <span>Design</span> <br />
-          <span>дизайн интерьеров</span></a>
-      </div>
-      <div class="header_nav">
-        <ul class="haeder_nav-list">
-          <li class="header_nav-item">
-            <a href="./index.html" target="_blank" class="header_nav-link">Главная</a>
-          </li>
-          <li class="header_nav-item">
-            <a href="#" target="_blank" class="header_nav-link">Тест</a>
-          </li>
-          <li class="header_nav-item">
-            <a href="./catalog.html" target="_blank" class="header_nav-link active">Каталог</a>
-          </li>
-          <li class="header_nav-item">
-            <a href="./about_us.html" target="_blank" class="header_nav-link">О нас</a>
-          </li>
-          <li class="header_nav-item">
-            <a href="#" target="_blank" class="header_nav-link">Цены</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header_contact">
-        <div class="header_contact-icon">
-          <a href="tel:+77005053000" class="header_contact-phone"><img src="../images/Vector.svg" alt="" /></a>
+  <body>
+    <header class="header">
+      <div class="header_container">
+        <div class="header_logo">
+          <a href="#" class="header_logo-link"
+            ><span>Simple</span> <span>Design</span> <br />
+            <span>дизайн интерьеров</span></a
+          >
         </div>
-        <div class="header_contact-info">
-          <a href="tel:+" class="header_contact-phone">+7 700 505 3000</a>
-          <p class="header_contact-hours">9:00 до 18:00</p>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-
-    <div class="main_container">
-      <div class="main_ccontainer-head">
-        <h3 class="head-design">Дизайн комнат</h3>
-        <article class="head-text">Выбирая дизайн комнаты, вы получаете смету со списком всех предметов в интерьере,
-          названиями, артикулами, цветом стен и так далее.</article>
-      </div>
-      <div class="main_container-livingRoom">
-        <div class="livingRoom head">Гостиные <img src="../images/сatalog/LongLine.svg" alt="line"></div>
-        <div class="livingRoom cardsContainer">
-
-          <div class="livingRoom-card0">
-            <img src="../images/сatalog/leftHalf.PNG" alt="img" class="cardImage">
-            <p class="cardName-secondary">ать</p>
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox" />
+        <label for="burger-toggle" class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="header_nav-contact">
+          <div class="header_nav">
+            <ul class="header_nav-list">
+              <li class="header_nav-item">
+                <a href="./index.html" target="_blank" class="header_nav-link"
+                  >Главная</a
+                >
+              </li>
+              <li class="header_nav-item">
+                <a href="#" target="_blank" class="header_nav-link">Тест</a>
+              </li>
+              <li class="header_nav-item">
+                <a
+                  href="./catalog.html"
+                  target="_blank"
+                  class="header_nav-link active"
+                  >Каталог</a
+                >
+              </li>
+              <li class="header_nav-item">
+                <a
+                  href="./about_us.html"
+                  target="_blank"
+                  class="header_nav-link"
+                  >О нас</a
+                >
+              </li>
+              <li class="header_nav-item">
+                <a href="./prices.html" target="_blank" class="header_nav-link"
+                  >Цены</a
+                >
+              </li>
+            </ul>
           </div>
-
-          <div class="livingRoom-card1">
-            <img src="../images/сatalog/image1.svg" alt="img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Акварель</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
+          <div class="header_contact">
+            <div class="header_contact-icon">
+              <a href="tel:+77005053000" class="header_contact-phone">
+                <img src="../images/Vector.svg" alt="" />
+              </a>
             </div>
-          </div>
-
-          <div class="livingRoom-card2">
-            <img src="../images/сatalog/image2.svg" alt="img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Ира</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
+            <div class="header_contact-info">
+              <a href="tel:+" class="header_contact-phone">+7 700 505 3000</a>
+              <p class="header_contact-hours">9:00 до 18:00</p>
             </div>
-          </div>
-
-          <div class="livingRoom-card3">
-            <img src="../images/сatalog/image3.svg" alt="img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Нурс</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-
-          <div class="livingRoom-card4">
-            <img src="../images/сatalog/rightHalf.PNG" alt="img" class="cardImage">
-            <p class="cardName-third">Нур</p>
-          </div>
-
-        </div>
-
-        <div class="livingRoom cardsContainer-mobile">
-          <div class="livingRoom-mobile-card1">
-            <img src="../images/сatalog/image1(1).svg" alt="img" class="cardImage-mobile">
-            <div class="button-container">
-              <p class="cardName">Акварель</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-          <div class="livingRoom--mobile-card">
-            <img src="../images/сatalog/line1.PNG" alt="img" class="cardImage-mobile">
-          </div>
-        </div>
-
-      </div>
-
-      <div class="main_container-kidsRoom">
-
-        <div class="kidsRoom head">Детские <img src="../images/сatalog/LongLine.svg" alt="line"></div>
-        <div class="kidsRoom cardsContainer">
-
-          <div class="livingRoom-card0">
-            <img src="../images/сatalog/leftHalf.PNG" alt="img" class="cardImage">
-            <p class="cardName-secondary">ать</p>
-          </div>
-
-          <div class="kidsRoom-card1">
-            <img src="../images/сatalog/image4.svg" alt="img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Синяя</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-
-          <div class="kidsRoom-card2">
-            <img src="../images/сatalog/image5.svg" alt="img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Розовая</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-
-          <div class="kidsRoom-card3">
-            <img src="../images/сatalog/image6.svg" alt=" img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Яркая</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-
-          <div class="livingRoom-card4">
-            <img src="../images/сatalog/rightHalf.PNG" alt="img" class="cardImage">
-            <p class="cardName-third">Нур</p>
-          </div>
-        </div>
-
-        <div class="kidsRoom cardsContainer-mobile">
-          <div class="kidsRoom-mobile-card1">
-            <img src="../images/сatalog/image2(2).svg" alt="img" class="cardImage-mobile">
-            <div class="button-container">
-              <p class="cardName">Акварель</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-          <div class="livingRoom--mobile-card">
-            <img src="../images/сatalog/line2.PNG" alt="img" class="cardImage-mobile">
           </div>
         </div>
       </div>
+    </header>
 
-
-      <div class="main_container-hall">
-        <div class="hall head">Коридоры - прихожие </div>
-        <div class="hall cardsContainer">
-
-          <div class="livingRoom-card0">
-            <img src="../images/сatalog/leftHalf.PNG" alt="img" class="cardImage">
-            <p class="cardName-secondary">ать</p>
+    <main>
+      <div class="main_container">
+        <div class="main_ccontainer-head">
+          <h3 class="head-design">Дизайн комнат</h3>
+          <article class="head-text">
+            Выбирая дизайн комнаты, вы получаете смету со списком всех предметов
+            в интерьере, названиями, артикулами, цветом стен и так далее.
+          </article>
+        </div>
+        <div class="main_container-livingRoom">
+          <div class="livingRoom head">
+            Гостиные <img src="../images/сatalog/LongLine.svg" alt="line" />
           </div>
+          <div class="livingRoom cardsContainer">
+            <div class="livingRoom-card0">
+              <img
+                src="../images/сatalog/leftHalf.PNG"
+                alt="img"
+                class="cardImage"
+              />
+              <p class="cardName-secondary">ать</p>
+            </div>
 
-          <div class="hall-card1">
-            <img src="../images/сatalog/image7.svg" alt="img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Ирина</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
+            <div class="livingRoom-card1">
+              <img
+                src="../images/сatalog/image1.svg"
+                alt="img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Акварель</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" /><a
+                    href="./style_overview.html"
+                    >Выбрать</a
+                  >
+                </button>
+              </div>
+            </div>
+
+            <div class="livingRoom-card2">
+              <img
+                src="../images/сatalog/image2.svg"
+                alt="img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Ира</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="livingRoom-card3">
+              <img
+                src="../images/сatalog/image3.svg"
+                alt="img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Нурс</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="livingRoom-card4">
+              <img
+                src="../images/сatalog/rightHalf.PNG"
+                alt="img"
+                class="cardImage"
+              />
+              <p class="cardName-third">Нур</p>
             </div>
           </div>
 
-          <div class="hall-card2">
-            <img src="../images/сatalog/image8.svg" alt="img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Акварель</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
+          <div class="livingRoom cardsContainer-mobile">
+            <div class="livingRoom-mobile-card1">
+              <img
+                src="../images/сatalog/image1(1).svg"
+                alt="img"
+                class="cardImage-mobile"
+              />
+              <div class="button-container">
+                <p class="cardName">Акварель</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+            <div class="livingRoom--mobile-card">
+              <img
+                src="../images/сatalog/line1.PNG"
+                alt="img"
+                class="cardImage-mobile"
+              />
             </div>
           </div>
-
-          <div class="hall-card3">
-            <img src="../images/сatalog/image9.svg" alt=" img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Кадыр</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-
-          <div class="livingRoom-card4">
-            <img src="../images/сatalog/rightHalf.PNG" alt="img" class="cardImage">
-            <p class="cardName-third">Нур</p>
-          </div>
-
         </div>
 
-        <div class="hall cardsContainer-mobile">
-          <div class="hall-mobile-card1">
-            <img src="../images/сatalog/image3(2).svg" alt="img" class="cardImage-mobile">
-            <div class="button-container">
-              <p class="cardName">Акварель</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
+        <div class="main_container-kidsRoom">
+          <div class="kidsRoom head">
+            Детские <img src="../images/сatalog/LongLine.svg" alt="line" />
+          </div>
+          <div class="kidsRoom cardsContainer">
+            <div class="livingRoom-card0">
+              <img
+                src="../images/сatalog/leftHalf.PNG"
+                alt="img"
+                class="cardImage"
+              />
+              <p class="cardName-secondary">ать</p>
+            </div>
+
+            <div class="kidsRoom-card1">
+              <img
+                src="../images/сatalog/image4.svg"
+                alt="img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Синяя</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="kidsRoom-card2">
+              <img
+                src="../images/сatalog/image5.svg"
+                alt="img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Розовая</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="kidsRoom-card3">
+              <img
+                src="../images/сatalog/image6.svg"
+                alt=" img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Яркая</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="livingRoom-card4">
+              <img
+                src="../images/сatalog/rightHalf.PNG"
+                alt="img"
+                class="cardImage"
+              />
+              <p class="cardName-third">Нур</p>
             </div>
           </div>
-          <div class="livingRoom--mobile-card">
-            <img src="../images/сatalog/line3.PNG" alt="img" class="cardImage-mobile">
+
+          <div class="kidsRoom cardsContainer-mobile">
+            <div class="kidsRoom-mobile-card1">
+              <img
+                src="../images/сatalog/image2(2).svg"
+                alt="img"
+                class="cardImage-mobile"
+              />
+              <div class="button-container">
+                <p class="cardName">Акварель</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+            <div class="livingRoom--mobile-card">
+              <img
+                src="../images/сatalog/line2.PNG"
+                alt="img"
+                class="cardImage-mobile"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="main_container-hall">
+          <div class="hall head">
+            Коридоры - прихожие
+            <img src="../images/сatalog/LongLine.svg" alt="line" />
+          </div>
+          <div class="hall cardsContainer">
+            <div class="livingRoom-card0">
+              <img
+                src="../images/сatalog/leftHalf.PNG"
+                alt="img"
+                class="cardImage"
+              />
+              <p class="cardName-secondary">ать</p>
+            </div>
+
+            <div class="hall-card1">
+              <img
+                src="../images/сatalog/image7.svg"
+                alt="img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Ирина</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="hall-card2">
+              <img
+                src="../images/сatalog/image8.svg"
+                alt="img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Акварель</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="hall-card3">
+              <img
+                src="../images/сatalog/image9.svg"
+                alt=" img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Кадыр</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="livingRoom-card4">
+              <img
+                src="../images/сatalog/rightHalf.PNG"
+                alt="img"
+                class="cardImage"
+              />
+              <p class="cardName-third">Нур</p>
+            </div>
+          </div>
+
+          <div class="hall cardsContainer-mobile">
+            <div class="hall-mobile-card1">
+              <img
+                src="../images/сatalog/image3(2).svg"
+                alt="img"
+                class="cardImage-mobile"
+              />
+              <div class="button-container">
+                <p class="cardName">Акварель</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+            <div class="livingRoom--mobile-card">
+              <img
+                src="../images/сatalog/line3.PNG"
+                alt="img"
+                class="cardImage-mobile"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="main_container-kitchen">
+          <div class="kitchen head">
+            Кухни <img src="../images/сatalog/LongLine.svg" alt="line" />
+          </div>
+          <div class="kitchen cardsContainer">
+            <div class="livingRoom-card0">
+              <img
+                src="../images/сatalog/leftHalf.PNG"
+                alt="img"
+                class="cardImage"
+              />
+              <p class="cardName-secondary">ать</p>
+            </div>
+
+            <div class="kitchen-card1">
+              <img
+                src="../images/сatalog/image10.svg"
+                alt="img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Ирина</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="kitchen-card2">
+              <img
+                src="../images/сatalog/image11.svg"
+                alt="img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Акварель</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="kitchen-card3">
+              <img
+                src="../images/сatalog/image12.svg"
+                alt=" img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Кадыр</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="livingRoom-card4">
+              <img
+                src="../images/сatalog/rightHalf.PNG"
+                alt="img"
+                class="cardImage"
+              />
+              <p class="cardName-third">Нур</p>
+            </div>
+          </div>
+
+          <div class="kitchen cardsContainer-mobile">
+            <div class="kitchen-mobile-card1">
+              <img
+                src="../images/сatalog/image4(2).svg"
+                alt="img"
+                class="cardImage-mobile"
+              />
+              <div class="button-container">
+                <p class="cardName">Акварель</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+            <div class="livingRoom--mobile-card">
+              <img
+                src="../images/сatalog/line4.PNG"
+                alt="img"
+                class="cardImage-mobile"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="main_container-toilet">
+          <div class="toilet head">
+            Санузлы <img src="../images/сatalog/LongLine.svg" alt="line" />
+          </div>
+          <div class="toilet cardsContainer">
+            <div class="livingRoom-card0">
+              <img
+                src="../images/сatalog/leftHalf.PNG"
+                alt="img"
+                class="cardImage"
+              />
+              <p class="cardName-secondary">ать</p>
+            </div>
+
+            <div class="toilet-card1">
+              <img
+                src="../images/сatalog/image13.svg"
+                alt="img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Нурл су</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="toilet-card2">
+              <img
+                src="../images/сatalog/image14.svg"
+                alt="img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Оркенд су 1</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="toilet-card3">
+              <img
+                src="../images/сatalog/image15.svg"
+                alt=" img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Оркенд су 2</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="livingRoom-card4">
+              <img
+                src="../images/сatalog/rightHalf.PNG"
+                alt="img"
+                class="cardImage"
+              />
+              <p class="cardName-third">Нур</p>
+            </div>
+          </div>
+
+          <div class="toilet cardsContainer-mobile">
+            <div class="toilet-mobile-card1">
+              <img
+                src="../images/сatalog/image5(2).svg"
+                alt="img"
+                class="cardImage-mobile"
+              />
+              <div class="button-container">
+                <p class="cardName">Акварель</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+            <div class="toilet-mobile-card">
+              <img
+                src="../images/сatalog/line5.PNG"
+                alt="img"
+                class="cardImage-mobile"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="main_container-bedroom">
+          <div class="bedroom head">
+            Спальни <img src="../images/сatalog/LongLine.svg" alt="line" />
+          </div>
+          <div class="bedroom cardsContainer">
+            <div class="livingRoom-card0">
+              <img
+                src="../images/сatalog/leftHalf.PNG"
+                alt="img"
+                class="cardImage"
+              />
+              <p class="cardName-secondary">ать</p>
+            </div>
+
+            <div class="bedroom-card1">
+              <img
+                src="../images/сatalog/image16.svg"
+                alt="img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Акварель</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="bedroom-card2">
+              <img
+                src="../images/сatalog/image17.svg"
+                alt="img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Нурл свет</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="bedroom-card3">
+              <img
+                src="../images/сatalog/image18.svg"
+                alt=" img"
+                class="cardImage"
+              />
+              <div class="button-container">
+                <p class="cardName">Ира</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+
+            <div class="livingRoom-card4">
+              <img
+                src="../images/сatalog/rightHalf.PNG"
+                alt="img"
+                class="cardImage"
+              />
+              <p class="cardName-third">Нур</p>
+            </div>
+          </div>
+
+          <div class="bedroom cardsContainer-mobile">
+            <div class="bedroom-mobile-card1">
+              <img
+                src="../images/сatalog/image6(2).svg"
+                alt="img"
+                class="cardImage-mobile"
+              />
+              <div class="button-container">
+                <p class="cardName">Акварель</p>
+                <button class="cardButton">
+                  <img src="../images/сatalog/bag.svg" alt="bag" />Выбрать
+                </button>
+              </div>
+            </div>
+            <div class="toilet-mobile-card">
+              <img
+                src="../images/сatalog/line6.PNG"
+                alt="img"
+                class="cardImage-mobile"
+              />
+            </div>
           </div>
         </div>
       </div>
+    </main>
 
-      <div class="main_container-kitchen">
-        <div class="kitchen head">Кухни <img src="../images/сatalog/LongLine.svg" alt="line"></div>
-        <div class="kitchen cardsContainer">
-
-          <div class="livingRoom-card0">
-            <img src="../images/сatalog/leftHalf.PNG" alt="img" class="cardImage">
-            <p class="cardName-secondary">ать</p>
-          </div>
-
-          <div class="kitchen-card1">
-            <img src="../images/сatalog/image10.svg" alt="img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Ирина</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-
-          <div class="kitchen-card2">
-            <img src="../images/сatalog/image11.svg" alt="img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Акварель</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-
-          <div class="kitchen-card3">
-            <img src="../images/сatalog/image12.svg" alt=" img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Кадыр</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-
-          <div class="livingRoom-card4">
-            <img src="../images/сatalog/rightHalf.PNG" alt="img" class="cardImage">
-            <p class="cardName-third">Нур</p>
-          </div>
-
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="footer_logo">
+          <a href="#" class="footer_logo-link"
+            ><span>Simple</span> <span>Design</span> <br />
+            <span>дизайн интерьеров</span></a
+          >
         </div>
-
-        <div class="kitchen cardsContainer-mobile">
-          <div class="kitchen-mobile-card1">
-            <img src="../images/сatalog/image4(2).svg" alt="img" class="cardImage-mobile">
-            <div class="button-container">
-              <p class="cardName">Акварель</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-          <div class="livingRoom--mobile-card">
-            <img src="../images/сatalog/line4.PNG" alt="img" class="cardImage-mobile">
-          </div>
+        <div class="footer_nav">
+          <ul class="footer_nav-list">
+            <li class="footer_nav-item">
+              <a href="./index.html" target="_blank" class="footer_nav-link"
+                >Главная</a
+              >
+            </li>
+            <li class="footer_nav-item">
+              <a href="#" target="_blank" class="footer_nav-link">Тест</a>
+            </li>
+            <li class="footer_nav-item">
+              <a
+                href="./catalog.html"
+                target="_blank"
+                class="footer_nav-link active"
+                >Каталог</a
+              >
+            </li>
+            <li class="footer_nav-item">
+              <a href="./about_us.html" target="_blank" class="footer_nav-link"
+                >О нас</a
+              >
+            </li>
+            <li class="footer_nav-item">
+              <a href="#" target="_blank" class="footer_nav-link">Цены</a>
+            </li>
+          </ul>
         </div>
-
-      </div>
-      <div class="main_container-toilet">
-
-        <div class="toilet head">Санузлы <img src="../images/сatalog/LongLine.svg" alt="line"></div>
-        <div class="toilet cardsContainer">
-
-          <div class="livingRoom-card0">
-            <img src="../images/сatalog/leftHalf.PNG" alt="img" class="cardImage">
-            <p class="cardName-secondary">ать</p>
-          </div>
-
-          <div class="toilet-card1">
-            <img src="../images/сatalog/image13.svg" alt="img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Нурл су</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-
-          <div class="toilet-card2">
-            <img src="../images/сatalog/image14.svg" alt="img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Оркенд су 1</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-
-          <div class="toilet-card3">
-            <img src="../images/сatalog/image15.svg" alt=" img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Оркенд су 2</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-
-          <div class="livingRoom-card4">
-            <img src="../images/сatalog/rightHalf.PNG" alt="img" class="cardImage">
-            <p class="cardName-third">Нур</p>
-          </div>
+        <div class="footer-policy">
+          <ul class="footer_policy-list">
+            <li class="footer_policy-item">
+              <a href="#" target="_blank" class="footer_policy-link"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="footer_policy-item">
+              <a href="#" target="_blank" class="footer_policy-link"
+                >Условия пользования</a
+              >
+            </li>
+          </ul>
         </div>
-
-        <div class="toilet cardsContainer-mobile">
-          <div class="toilet-mobile-card1">
-            <img src="../images/сatalog/image5(2).svg" alt="img" class="cardImage-mobile">
-            <div class="button-container">
-              <p class="cardName">Акварель</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
+        <div class="footer_contact">
+          <div class="footer_contact-icon">
+            <a href="tel:+77005053000" class="footer_contact-phone"
+              ><img src="../images/Vector.svg" alt=""
+            /></a>
           </div>
-          <div class="toilet-mobile-card">
-            <img src="../images/сatalog/line5.PNG" alt="img" class="cardImage-mobile">
+          <div class="footer_contact-info">
+            <a href="tel:+" class="footer_contact-phone">+7 700 505 3000</a>
+            <p class="footer_contact-hours">9:00 до 18:00</p>
           </div>
         </div>
       </div>
-
-      <div class="main_container-bedroom">
-        <div class="bedroom head">Спальни <img src="../images/сatalog/LongLine.svg" alt="line"></div>
-        <div class="bedroom cardsContainer">
-
-          <div class="livingRoom-card0">
-            <img src="../images/сatalog/leftHalf.PNG" alt="img" class="cardImage">
-            <p class="cardName-secondary">ать</p>
-          </div>
-
-          <div class="bedroom-card1">
-            <img src="../images/сatalog/image16.svg" alt="img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName"> Акварель</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-
-          <div class="bedroom-card2">
-            <img src="../images/сatalog/image17.svg" alt="img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Нурл свет</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-
-          <div class="bedroom-card3">
-            <img src="../images/сatalog/image18.svg" alt=" img" class="cardImage">
-            <div class="button-container">
-              <p class="cardName">Ира</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-
-          <div class="livingRoom-card4">
-            <img src="../images/сatalog/rightHalf.PNG" alt="img" class="cardImage">
-            <p class="cardName-third">Нур</p>
-          </div>
-
-        </div>
-
-        <div class="bedroom cardsContainer-mobile">
-          <div class="bedroom-mobile-card1">
-            <img src="../images/сatalog/image6(2).svg" alt="img" class="cardImage-mobile">
-            <div class="button-container">
-              <p class="cardName">Акварель</p>
-              <button class="cardButton"><img src="../images/сatalog/bag.svg" alt="bag">Выбрать</button>
-            </div>
-          </div>
-          <div class="toilet-mobile-card">
-            <img src="../images/сatalog/line6.PNG" alt="img" class="cardImage-mobile">
-          </div>
-        </div>
-
+      <div class="footer__copyright">
+        <p>&copy; 2022. Все права защищены.</p>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-  </main>
-
-
-
-  <footer class="footer">
-    <div class="footer_container">
-      <div class="footer_logo">
-        <a href="#" class="footer_logo-link"><span>Simple</span> <span>Design</span> <br />
-          <span>дизайн интерьеров</span></a>
-      </div>
-      <div class="footer_nav">
-        <ul class="footer_nav-list">
-          <li class="footer_nav-item">
-            <a href="./index.html" target="_blank" class="footer_nav-link">Главная</a>
-          </li>
-          <li class="footer_nav-item">
-            <a href="#" target="_blank" class="footer_nav-link">Тест</a>
-          </li>
-          <li class="footer_nav-item">
-            <a href="./catalog.html" target="_blank" class="footer_nav-link active">Каталог</a>
-          </li>
-          <li class="footer_nav-item">
-            <a href="./about_us.html" target="_blank" class="footer_nav-link">О нас</a>
-          </li>
-          <li class="footer_nav-item">
-            <a href="#" target="_blank" class="footer_nav-link">Цены</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-policy">
-        <ul class="footer_policy-list">
-          <li class="footer_policy-item">
-            <a href="#" target="_blank" class="footer_policy-link">Политика конфиденциальности</a>
-          </li>
-          <li class="footer_policy-item">
-            <a href="#" target="_blank" class="footer_policy-link">Условия пользования</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer_contact">
-        <div class="footer_contact-icon">
-          <a href="tel:+77005053000" class="footer_contact-phone"><img src="../images/Vector.svg" alt="" /></a>
-        </div>
-        <div class="footer_contact-info">
-          <a href="tel:+" class="footer_contact-phone">+7 700 505 3000</a>
-          <p class="footer_contact-hours">9:00 до 18:00</p>
-        </div>
-      </div>
-    </div>
-    <div class="footer__copyright">
-      <p>&copy; 2022. Все права защищены.</p>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

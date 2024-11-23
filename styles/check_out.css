@@ -409,6 +409,8 @@ body {
   .order-title,
   .extras-title,
   .styles-title {
+  .extras-title,
+  .styles-title {
     font-size: 25px;
     font-weight: 600;
   }
@@ -428,6 +430,7 @@ body {
     font-size: 10px;
   }
   .option_plan-title,
+  .option_project-title {
   .option_project-title {
     justify-content: flex-start;
   }

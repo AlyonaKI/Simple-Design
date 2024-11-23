@@ -141,8 +141,7 @@ li {
   display: flex;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
   scroll-padding: 0 0;
 }
 

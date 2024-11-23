@@ -218,21 +218,6 @@ h2 {
   justify-self: end;
 }
 
-@-webkit-keyframes tonext {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  99% {
-    left: 0;
-  }
-}
-
 @keyframes tonext {
   75% {
     left: 0;
@@ -245,23 +230,6 @@ h2 {
   }
   99% {
     left: 0;
-  }
-}
-@-webkit-keyframes tostart {
-  0% {
-    transform: translateX(-400%);
-  }
-  25% {
-    transform: translateX(-300%);
-  }
-  50% {
-    transform: translateX(-200%);
-  }
-  75% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
   }
 }
 @keyframes tostart {
@@ -279,20 +247,6 @@ h2 {
   }
   100% {
     transform: translateX(0%);
-  }
-}
-@-webkit-keyframes snap {
-  96% {
-    scroll-snap-align: center;
-  }
-  97% {
-    scroll-snap-align: none;
-  }
-  99% {
-    scroll-snap-align: none;
-  }
-  100% {
-    scroll-snap-align: center;
   }
 }
 @keyframes snap {
@@ -361,8 +315,7 @@ h2 {
   display: flex;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
   scroll-padding: 0 0;
 }
 
@@ -400,33 +353,25 @@ h2 {
 }
 
 .carousel__snapper {
-  -webkit-animation-name: tonext, snap;
-          animation-name: tonext, snap;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: tonext, snap;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .carousel__slide:last-child .carousel__snapper {
-  -webkit-animation-name: tostart, snap;
-          animation-name: tostart, snap;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  animation-name: tostart, snap;
+  animation-duration: 10s;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .carousel__snapper {
-    -webkit-animation-name: none;
-            animation-name: none;
+    animation-name: none;
   }
 }
 .carousel:hover .carousel__snapper,
 .carousel:focus-within .carousel__snapper {
-  -webkit-animation-name: none;
-          animation-name: none;
+  animation-name: none;
 }
 
 .carousel::before,

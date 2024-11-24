@@ -178,23 +178,13 @@ ul {
 
 .rooms__title_text {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 2.2fr 3fr;
   grid-template-rows: 1fr;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   align-items: baseline;
   justify-items: start;
-  display: grid;
-  grid-template-columns: 2.2fr 3fr;
-  grid-template-rows: 1fr;
-  column-gap: 2rem;
-  align-items: baseline;
-  justify-items: start;
   margin-bottom: 2.5rem;
-}
-.rooms__title_text .rooms__title_text-one {
-  grid-column: 1/2;
-  grid-row: 1/2;
 }
 .rooms__title_text .rooms__title_text-one {
   grid-column: 1/2;
@@ -204,61 +194,14 @@ ul {
   color: rgba(26, 26, 26, 0.7);
 }
 .rooms__title_text .rooms__title_text-two {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-button {
-  margin: 20px 0;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-button .rooms__button {
-  max-width: 268px;
-  height: 74px;
-  background-color: #bd7048;
-  border: none;
-  color: white;
-  border-radius: 100px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 15px;
-  cursor: pointer;
-  display: flex;
-  max-width: 9rem;
-  min-width: 170px;
-  height: 57px;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-button .rooms__button:hover {
-  color: rgba(0, 0, 0, 0.5);
-  opacity: 0.8;
-}
-button .rooms__button a {
-  text-decoration: none;
-  color: white;
-}
-button .rooms__button a:hover {
-  color: #9fa28a;
-  opacity: 0.8;
-}
-button a {
-  color: #bd7048;
-}
-button .rooms__title_text-two {
   list-style: none;
   grid-column: 2/3;
   grid-row: 1/2;
 }
-button .rooms__title_text-two span {
+.rooms__title_text .rooms__title_text-two span {
   font-weight: 400;
 }
-button .rooms__title_text-two h4 {
+.rooms__title_text .rooms__title_text-two h4 {
   font-size: 20px;
   font-weight: 500;
   color: rgba(26, 26, 26, 0.7);
@@ -337,35 +280,14 @@ button a:hover {
 .receive__example {
   display: flex;
   align-items: center;
-  display: flex;
-  align-items: center;
   margin-bottom: 8rem;
 }
 
-.works,
-.services,
-.receive,
-.rooms {
-  margin: 0 7rem;
-}
-
-.works,
-.services,
-.receive,
-.rooms {
+.works, .services, .receive, .rooms {
   margin: 0 6rem;
 }
 
-.services__title,
-.works__title {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  text-align: left;
-  font-size: 2rem;
-  font-weight: 700;
-}
-.services__title .services__title,
-.works__title .services__title {
+.services__title {
   margin-bottom: 2.5rem;
   text-align: left;
   font-size: 40px;

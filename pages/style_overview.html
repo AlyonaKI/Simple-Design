@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles/normalize.css" />
+    <!-- <link rel="stylesheet" href="../styles/normalize.css" /> -->
     <link rel="stylesheet" href="../styles/style_overview.css" />
     <link rel="shortcut icon" href="../images/favicon.svg" type="svg/xml" />
     <title>Страница стиля</title>
@@ -18,95 +18,64 @@
     <header class="header">
       <div class="header_container">
         <div class="header_logo">
-          <a href="#" class="header_logo-link"
-            ><span>Simple</span> <span>Design</span> <br />
-            <span>дизайн интерьеров</span></a
-          >
+          <a href="#" class="header_logo-link">
+            <span>Simple</span> <span>Design</span> <br />
+            <span>дизайн интерьеров</span>
+          </a>
         </div>
-        <div class="header_nav">
-          <ul class="header_nav-list">
-            <li class="header_nav-item">
-              <a href="./index.html" target="_blank" class="header_nav-link"
-                >Главная</a
-              >
-            </li>
-            <li class="header_nav-item">
-              <a href="#" target="_blank" class="header_nav-link">Тест</a>
-            </li>
-            <li class="header_nav-item">
-              <a href="./catalog.html" target="_blank" class="header_nav-link"
-                >Каталог</a
-              >
-            </li>
-            <li class="header_nav-item">
-              <a
-                href="./about_us.html"
-                target="_blank"
-                class="header_nav-link active"
-                >О нас</a
-              >
-            </li>
-            <li class="header_nav-item">
-              <a href="#" target="_blank" class="header_nav-link">Цены</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header_contact">
-          <div class="header_contact-icon">
-            <a href="tel:+77005053000" class="header_contact-phone"
-              ><img src="../images/Vector.svg" alt=""
-            /></a>
+        <!-- Чекбокс для управления бургер-меню -->
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox" />
+        <label for="burger-toggle" class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <!-- Навигация и контакты -->
+        <div class="header_nav-contact">
+          <div class="header_nav">
+            <ul class="header_nav-list">
+              <li class="header_nav-item">
+                <a
+                  href="./index.html"
+                  target="_blank"
+                  class="header_nav-link active"
+                  >Главная</a
+                >
+              </li>
+              <li class="header_nav-item">
+                <a href="#" target="_blank" class="header_nav-link">Тест</a>
+              </li>
+              <li class="header_nav-item">
+                <a href="./catalog.html" target="_blank" class="header_nav-link"
+                  >Каталог</a
+                >
+              </li>
+              <li class="header_nav-item">
+                <a
+                  href="./about_us.html"
+                  target="_blank"
+                  class="header_nav-link"
+                  >О нас</a
+                >
+              </li>
+              <li class="header_nav-item">
+                <a href="#" target="_blank" class="header_nav-link">Цены</a>
+              </li>
+              <li class="header_nav-item">
+                <a href="#" target="_blank" id="nav-link_contact">Контакты</a>
+              </li>
+            </ul>
           </div>
-          <div class="header_contact-info">
-            <a href="tel:+" class="header_contact-phone">+7 700 505 3000</a>
-            <p class="header_contact-hours">9:00 до 18:00</p>
-          </div>
-        </div>
-      </div>
-      <div class="header_container">
-        <div class="header_logo">
-          <a href="#" class="header_logo-link"
-            ><span>Simple</span> <span>Design</span> <br />
-            <span>дизайн интерьеров</span></a
-          >
-        </div>
-        <div class="header_nav">
-          <ul class="header_nav-list">
-            <li class="header_nav-item">
-              <a href="./index.html" target="_blank" class="header_nav-link"
-                >Главная</a
-              >
-            </li>
-            <li class="header_nav-item">
-              <a href="#" target="_blank" class="header_nav-link">Тест</a>
-            </li>
-            <li class="header_nav-item">
-              <a
-                href="./catalog.html"
-                target="_blank"
-                class="header_nav-link active"
-                >Каталог</a
-              >
-            </li>
-            <li class="header_nav-item">
-              <a href="./about_us.html" target="_blank" class="header_nav-link"
-                >О нас</a
-              >
-            </li>
-            <li class="header_nav-item">
-              <a href="#" target="_blank" class="header_nav-link">Цены</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header_contact">
-          <div class="header_contact-icon">
-            <a href="tel:+77005053000" class="header_contact-phone"
-              ><img src="../images/Vector.svg" alt=""
-            /></a>
-          </div>
-          <div class="header_contact-info">
-            <a href="tel:+" class="header_contact-phone">+7 700 505 3000</a>
-            <p class="header_contact-hours">9:00 до 18:00</p>
+          <div class="header_contact">
+            <div class="header_contact-icon">
+              <a href="tel:+77005053000" class="header_contact-phone">
+                <img src="../images/Vector.svg" alt="" />
+              </a>
+            </div>
+            <div class="header_contact-info">
+              <a href="tel:+" class="header_contact-phone">+7 700 505 3000</a>
+              <p class="header_contact-hours">9:00 до 18:00</p>
+            </div>
           </div>
         </div>
       </div>
@@ -236,115 +205,6 @@
           </div>
         </div>
       </section>
-      <div class="unit1">
-        <img
-          class="img_unit1"
-          src="../images/style_overview/style_img1.svg"
-          alt=""
-        />
-        <img
-          class="img_unit1"
-          src="../images/style_overview/style_img2.svg"
-          alt=""
-        />
-      </div>
-      <section class="rooms">
-        <h4 class="rooms__sibtitle"><span>Гостиные</span></h4>
-        <h3 class="rooms__title">Акварель (Dark)</h3>
-        <div class="rooms__title_text">
-          <h4 class="rooms__title_text-one">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac
-            consequat a, ligula consequat tellus. In tellus ultrices senectus
-            nisl sit.
-          </h4>
-          <ul class="rooms__title_text-two">
-            <li>
-              <h4><span>-Цветовая гамма:</span> прохладная палитра</h4>
-            </li>
-            <li>
-              <h4><span>-Основные материалы:</span> краска, белая эмаль</h4>
-            </li>
-            <li>
-              <h4>
-                <span>-Акцентные элементы:</span> лиловый цвет в отделке стен
-              </h4>
-            </li>
-          </ul>
-        </div>
-        <button class="rooms__button">
-          <img src="../images/style_overview/cart_logo.svg" alt="Корзина" /><a
-            href="check_out.html"
-            target="_blank"
-            >В корзину</a
-          >
-        </button>
-        <h4 class="rooms__price">Стоимость комнаты: 30 000 тг</h4>
-      </section>
-      <section class="receive">
-        <h3 class="receive__title">Что вы получаете</h3>
-        <ul class="receive__list">
-          <li>смета на мебель и освещение (названия и артикулы)</li>
-          <li>ведомость материалов</li>
-          <li>чертежи дизайна под вашу планировку (развертки стен)</li>
-        </ul>
-        <div class="receive__example">
-          <div>
-            <img
-              class="receive__example_icon"
-              src="../images/pdf_icon.svg"
-              alt="pdf"
-            />
-          </div>
-          <div class="receive__example_items">
-            <p class="receive__example_item">Смотреть пример</p>
-            <h4 class="receive__example_item">Pdf 2,5 Мб</h4>
-          </div>
-        </div>
-      </section>
-      <section class="services">
-        <h2 class="services__title">Дополнительные услуги</h2>
-        <div class="services__items">
-          <div class="services__item-one_image">
-            <img src="../images/style_overview/tender.svg" alt="Тендер" />
-          </div>
-          <a href="#" class="services__item-one_link"
-            >Тендер строительных бригад</a
-          >
-          <div class="services__item-two_image">
-            <img src="../images/style_overview/estimate.svg" alt="Смета" />
-          </div>
-          <a href="#" class="services__item-two_link">Составление сметы</a>
-          <div class="services__item-three_image">
-            <img src="../images/style_overview/album.svg" alt="Альбом" />
-          </div>
-          <a href="#" class="services__item-three_link">Печать альбома</a>
-        </div>
-      </section>
-      <section class="works">
-        <h2 class="works__title">Как это работает?</h2>
-        <div class="works__items">
-          <div class="works__item-one_text">
-            <h4>Выбор состава проекта</h4>
-            <p>
-              Выберите состав вашего проекта: только планировка или
-              дизайн-проект
-            </p>
-          </div>
-          <div class="works__item-two_text">
-            <h4>Настройка проекта</h4>
-            <p>
-              Отметьте в корзине нужен ли вам профессиональный замер, подбор
-              строительной бригады или точный просчет сметы
-            </p>
-          </div>
-          <div class="works__item-three_text">
-            <h4>Создание чертежей</h4>
-            <p>
-              Наши дизайнеры спроектируют интерьер, подготовят чертежи и сметы.
-            </p>
-          </div>
-        </div>
-      </section>
     </main>
     <footer class="footer">
       <div class="footer_container">
@@ -357,35 +217,24 @@
         <div class="footer_nav">
           <ul class="footer_nav-list">
             <li class="footer_nav-item">
-              <a href="./index.html" target="_blank" class="footer_nav-link">
-                Главная</a
-              >
-            </li>
-            <li class="footer_nav-item">
-              <a href="#" target="_blank" class="footer_nav-link"> Тест</a>
-            </li>
-            <li class="footer_nav-item">
-              <a href="./catalog.html" target="_blank" class="footer_nav-link">
-                Каталог</a
-              >
               <a
-                href="./catalog.html"
+                href="./index.html"
                 target="_blank"
                 class="footer_nav-link active"
-              >
-                Каталог</a
+                >Главная</a
               >
             </li>
             <li class="footer_nav-item">
-              <a
-                href="./about_us.html"
-                target="_blank"
-                class="footer_nav-link active"
+              <a href="#" target="_blank" class="footer_nav-link">Тест</a>
+            </li>
+            <li class="footer_nav-item">
+              <a href="./catalog.html" target="_blank" class="footer_nav-link"
+                >Каталог</a
               >
-                О нас</a
-              >
-              <a href="./about_us.html" target="_blank" class="footer_nav-link">
-                О нас</a
+            </li>
+            <li class="footer_nav-item">
+              <a href="./about_us.html" target="_blank" class="footer_nav-link"
+                >О нас</a
               >
             </li>
             <li class="footer_nav-item">
@@ -396,13 +245,13 @@
         <div class="footer-policy">
           <ul class="footer_policy-list">
             <li class="footer_policy-item">
-              <a href="#" target="_blank" class="footer_policy-link">
-                Политика конфиденциальности</a
+              <a href="#" target="_blank" class="footer_policy-link"
+                >Политика конфиденциальности</a
               >
             </li>
             <li class="footer_policy-item">
-              <a href="#" target="_blank" class="footer_policy-link">
-                Условия пользования</a
+              <a href="#" target="_blank" class="footer_policy-link"
+                >Условия пользования</a
               >
             </li>
           </ul>

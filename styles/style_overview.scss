@@ -545,6 +545,14 @@ button { @include button($button-text-color,
             display: none;
         }
 
+        .img_unit1:first-child {
+            display: none;
+        }
+
+        .img_unit1:nth-child(2) {
+            max-width: 760px;
+        }
+
         .rooms__title_text {
             grid-template-columns: 1fr;
             grid-template-rows: repeat(2, auto);
@@ -578,6 +586,10 @@ button { @include button($button-text-color,
         .receive {
             display: none;
         }
+
+        .works, .services, .receive, .rooms {
+            margin: 0 3rem;
+        }
         
         .services__title, .works__title {
             margin-bottom: 1.5rem;
@@ -606,25 +618,26 @@ button { @include button($button-text-color,
             grid-template-columns: 1fr;
             grid-template-rows: repeat(3, auto);
             margin-bottom: 1.5rem;
+            row-gap: 2rem;
 
             .works__item-one_text {
                 grid-column: 1/2;
                 grid-row: 1/2;
-                margin-bottom: 3.5rem;
+                padding-bottom: 2rem;
                 background-size: 12%;
             }
 
             .works__item-two_text {
                 grid-column: 1/2;
                 grid-row: 2/3;
-                margin-bottom: 3.5rem;
+                padding-bottom: 2rem;
                 background-size: 15%;
             }
 
             .works__item-three_text {
                 grid-column: 1/2;
                 grid-row: 3/4;
-                margin-bottom: 3.5rem;
+                padding-bottom: 2rem;
                 background-size: 15%;
             }
         }
@@ -635,7 +648,19 @@ button { @include button($button-text-color,
 
         body {
         max-width: 440px;
+        
+
+        .unit1 {
+        .img_unit1:first-child {
+            display: block;
+            min-width: 425px;
+            max-width: 440px;
         }
+
+        .img_unit1:nth-child(2) {
+            display: none;
+        }
+    }
 
         .rooms__title_text-two li {
             margin-bottom: 0.7rem;
@@ -645,7 +670,7 @@ button { @include button($button-text-color,
             margin-bottom: 1.8rem;
 
             .works__item-one_text {
-                background-size: 65%;
+                background-size: 28%;
             }
 
             .works__item-two_text {
@@ -656,4 +681,41 @@ button { @include button($button-text-color,
                 background-size: 35%;
             }
         }
+
+        .services__items {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 40px 1fr 40px 1fr 40px;
+            justify-items: start;
+      
+            .services__item-two_image {
+              grid-column: 1 / 2;
+              grid-row: 3 / 4;
+            }
+      
+            .services__item-two_link {
+              grid-column: 1 / 2;
+              grid-row: 4 / 5;
+            }
+      
+            .services__item-one_link, .services__item-two_link, .services__item-three_link {
+              align-self: start;
+              padding-left: 1.5rem;
+              margin: 0;
+            }
+
+            div {
+                max-width: 400px;
+             
+                img {
+              max-width: 400px;
+            }
+          }
+    
+        .footer {
+            .footer-policy {
+              display: none;
+            }
+          }
     }
+}
+}

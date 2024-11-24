@@ -1,118 +1,120 @@
 @import "_variables.scss";
 
 body {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    font-family: $main-font;
-    font-size: $main-font-size;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: $main-font;
+  font-size: $main-font-size;
+  box-sizing: border-box;
 }
 
 header {
-    margin: 0;
+  margin: 0;
 }
 
 span {
-    color: $primary-color;
+  color: $primary-color;
 }
 
 .header_container {
-
-    padding: 2rem 5rem; //40px 100px
-    display: flex;
-    justify-content: space-between;
-    font-weight: $subheading-font-weight;
-    font-size: 0.75rem;
-    box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
-        a {
+  padding: 2rem 5rem; //40px 100px
+  display: flex;
+  justify-content: space-between;
+  font-weight: $subheading-font-weight;
+  font-size: 0.75rem;
+  box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
+  a {
     text-decoration: none;
-    }
+  }
 
-    .header_logo {
-        a {
-        span:nth-of-type(1) {
-            color: $main-color;
-        }
-        span:nth-of-type(2) {
-            color: $primary-color;
-        }
-        span:nth-of-type(3) {
-            font-weight: $main-font-weight;
-            color: $main-color;
-            font-size: 0.5rem; //10px
-        }
-        }
-    }
-
-    .header_nav-list {
-        display: flex;
-        list-style: none;
+  .header_logo {
+    a {
+      span:nth-of-type(1) {
+        color: $main-color;
+      }
+      span:nth-of-type(2) {
+        color: $primary-color;
+      }
+      span:nth-of-type(3) {
         font-weight: $main-font-weight;
-        li {
-          //color: rgb(0, 0, 0, 0.5);
-          padding: 0.4rem 1rem; //8px 20px
-        a {
-            color: rgb(0, 0, 0, 0.5);
-        }
-        }
-        .header_nav-link {
-          padding-bottom: 0.6rem; //12px
-        position: relative;
-        transition: color 0.3s ease;
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 25%;
-            width: 50%;
-            height: 0.1rem; //2px
-            background-color: $primary-color;
-            transform: translateX(50%);
-            transition: opacity 0.3s ease;
-            opacity: 0;
-        }
-        &.active {
-            color: $primary-color;
-            font-weight: $subheading-font-weight;
-        }
-        &.active::after {
-            opacity: 1;
-        }
-        &:hover {
-            color: $primary-color;
-        }
-        &:hover::after {
-            opacity: 1;
-        }
-        }
+        color: $main-color;
+        font-size: 0.5rem; //10px
+      }
     }
+  }
 
-    .header_contact {
-        display: flex;
-        .header_contact-icon {
-          padding-top: 0.2rem; //4px
-          padding-right: 1rem; //20px
-        }
-        .header_contact-info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        a {
-            font-weight: $subheading-font-weight;
-            color: #3b3b3b;
-        }
-        a:hover {
-            color: $primary-color;
-        }
-        p {
-            font-weight: 500;
-            color: rgba(59, 59, 59, 0.5);
-        }
-        }
+  .header_nav-list {
+    display: flex;
+    list-style: none;
+    font-weight: $main-font-weight;
+    li {
+      //color: rgb(0, 0, 0, 0.5);
+      padding: 0.4rem 1rem; //8px 20px
+      a {
+        color: rgb(0, 0, 0, 0.5);
+      }
     }
+    .header_nav-link {
+      padding-bottom: 0.6rem; //12px
+      position: relative;
+      transition: color 0.3s ease;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        width: 50%;
+        height: 0.1rem; //2px
+        background-color: $primary-color;
+        transform: translateX(50%);
+        transition: opacity 0.3s ease;
+        opacity: 0;
+      }
+      &.active {
+        color: $primary-color;
+        font-weight: $subheading-font-weight;
+      }
+      &.active::after {
+        opacity: 1;
+      }
+      &:hover {
+        color: $primary-color;
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  .header_contact {
+    display: flex;
+    .header_contact-icon {
+      padding-top: 0.2rem; //4px
+      padding-right: 1rem; //20px
+    }
+    .header_contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      a {
+        font-weight: $subheading-font-weight;
+        color: #3b3b3b;
+      }
+      a:hover {
+        color: $primary-color;
+      }
+      p {
+        font-weight: 500;
+        color: rgba(59, 59, 59, 0.5);
+      }
+    }
+  }
 }
 
+// p, h2, h3, h4 {
+//     margin: 0;
+// }
 p, h2, h3, h4 {
     margin: 0;
 } 
@@ -137,6 +139,12 @@ ul {
 }
 
 .rooms__title_text {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr;
+  column-gap: 2rem;
+  align-items: baseline;
+  justify-items: start;
     display: grid;
     grid-template-columns: 2.2fr 3fr;
     grid-template-rows: 1fr;
@@ -145,6 +153,10 @@ ul {
     justify-items: start;
     margin-bottom: 2.5rem;
 
+  .rooms__title_text-one {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
     .rooms__title_text-one {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -153,6 +165,37 @@ ul {
         color: $text-color;
     }
 
+  .rooms__title_text-two {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+
+button {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  .rooms__button {
+    @include button(
+      $button-text-color,
+      $secondary-font-size,
+      $subheading-font-weight,
+      $primary-color
+    );
+    display: flex;
+    max-width: 9rem;
+    min-width: 170px;
+    height: 57px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  a {
+    color: $primary-color;
+  }
     .rooms__title_text-two {
         list-style: none;
         grid-column: 2/3;
@@ -219,18 +262,31 @@ button { @include button($button-text-color,
     margin-bottom: 0.3rem;
 }
 
-
 .receive__example {
+  display: flex;
+  align-items: center;
     display: flex;
     align-items: center;
     margin-bottom: 8rem;
 }
 
+.works,
+.services,
+.receive,
+.rooms {
+  margin: 0 7rem;
 
 .works, .services, .receive, .rooms {
     margin: 0 6rem;
 }
 
+.services__title,
+.works__title {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: $secondary-font-weight;
 .services__title {
     margin-bottom: 2.5rem;
     text-align: left;
@@ -240,13 +296,21 @@ button { @include button($button-text-color,
 }
 
 .services__items {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: 1fr 15%;
-    column-gap: 2rem;
-    align-items: center;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 1fr 15%;
+  column-gap: 2rem;
+  align-items: center;
+  justify-items: center;
 
+  a {
+    justify-self: start;
+    padding-left: 4rem;
+    text-decoration: none;
+    color: $main-color;
+    font-size: 1rem;
+    font-weight: $subheading-font-weight;
+  }
     a {
         justify-self: start;
         padding-left: 2.4rem;
@@ -259,15 +323,15 @@ button { @include button($button-text-color,
         margin-bottom: 3rem;
     }
 
-    .services__item-one_link {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
+  .services__item-one_link {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 
-    .services__item-two_link {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
+  .services__item-two_link {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
 }
 
 .works__title {
@@ -280,6 +344,12 @@ button { @include button($button-text-color,
 }
 
 .works__items {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  justify-items: center;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: 1fr;
@@ -288,10 +358,13 @@ button { @include button($button-text-color,
     justify-items: center;
     margin-bottom: 7.6rem;
 
-    img {
-        justify-self: left;
-    }
+  img {
+    justify-self: left;
+  }
 
+  // h4 {
+
+  // }
     h4 {
         color: #262626;
         font-size: $main-font-size;
@@ -300,6 +373,9 @@ button { @include button($button-text-color,
         margin-left: 1.5rem;      
     }
 
+  // p {
+
+  // }
     p {
         color: $text-color;
         font-size: $secondary-font-size;
@@ -307,6 +383,10 @@ button { @include button($button-text-color,
         margin-left: 1.5rem;   
     }
 
+  .works__item-one_text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
     .works__item-one_text {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -315,6 +395,10 @@ button { @include button($button-text-color,
         background-size: 22%;
     }
 
+  .works__item-two_text {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
     .works__item-two_text {
         grid-column: 2/3;
         grid-row: 1/2;
@@ -323,6 +407,10 @@ button { @include button($button-text-color,
         background-size: 22%;
     }
 
+  .works__item-three_text {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
     .works__item-three_text {
         grid-column: 3/4;
         grid-row: 1/2;
@@ -335,93 +423,103 @@ button { @include button($button-text-color,
 
 
 .footer {
-    font-size: 0.75rem; //15px
-    font-weight: $subheading-font-weight;
-    box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
-    .footer_container {
-        padding: 2rem 5rem; //40px 100px
-        display: flex;
-        justify-content: space-between;
+  font-size: 0.75rem; //15px
+  font-weight: $subheading-font-weight;
+  box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
+  .footer_container {
+    padding: 2rem 5rem; //40px 100px
+    display: flex;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+    }
+
+    .footer_logo {
+      a {
+        span:nth-of-type(1) {
+          color: $main-color;
+        }
+        span:nth-of-type(2) {
+          color: $primary-color;
+        }
+        span:nth-of-type(3) {
+          font-weight: $main-font-weight;
+          color: $main-color;
+          font-size: 0.5rem; //10px
+        }
+      }
+    }
+
+    .footer_nav-list {
+      list-style: none;
+      font-weight: $main-font-weight;
+      li {
+        padding-bottom: 0.4rem; //8px
         a {
-            text-decoration: none;
+          color: rgba(33, 33, 33, 0.5);
         }
-    
-        .footer_logo {
-            a {
-            span:nth-of-type(1) {
-                color: $main-color;
-            }
-            span:nth-of-type(2) {
-                color: $primary-color;
-            }
-            span:nth-of-type(3) {
-                font-weight: $main-font-weight;
-                color: $main-color;
-                font-size: 0.5rem; //10px
-            }
-            }
+      }
+      .footer_nav-link {
+        &.active {
+          color: $primary-color;
+          font-weight: $subheading-font-weight;
         }
-    
-        .footer_nav-list {
-            list-style: none;
-            font-weight: $main-font-weight;
-            li {
-            padding-bottom: 0.4rem; //8px
-            a {
-                color: rgba(33, 33, 33, 0.5);
-            }
-            }
-            .footer_nav-link {
-            &.active {
-                color: $primary-color;
-                font-weight: $subheading-font-weight;
-            }
-            &.active::after {
-                opacity: 1;
-            }
-            &:hover {
-                color: $primary-color;
-            }
-            }
+        &.active::after {
+          opacity: 1;
         }
-    
-        .footer-policy {
-            font-weight: 500;
-            li {
-            list-style: none;
-            a {
-                color: rgba(33, 33, 33, 0.5);
-                &:hover {
-                color: $primary-color;
-                }
-            }
-            }
+        &:hover {
+          color: $primary-color;
         }
+      }
+    }
+
+    .footer-policy {
+      font-weight: 500;
+      li {
+        list-style: none;
+        a {
+          color: rgba(33, 33, 33, 0.5);
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
 
     .footer_contact {
+      display: flex;
+      .footer_contact-icon {
+        padding-top: 0.2rem; //4px
+        padding-right: 1rem; //20px
+      }
+      .footer_contact-info {
         display: flex;
-        .footer_contact-icon {
-          padding-top: 0.2rem; //4px
-          padding-right: 1rem; //20px
+        flex-direction: column;
+        align-items: flex-end;
+        a {
+          font-weight: $subheading-font-weight;
+          color: #3b3b3b;
         }
-        .footer_contact-info {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            a {
-            font-weight: $subheading-font-weight;
-            color: #3b3b3b;
-            }
-            a:hover {
-            color: $primary-color;
-            }
-            p {
-            font-weight: 500;
-            color: rgba(59, 59, 59, 0.5);
-            } 
+        a:hover {
+          color: $primary-color;
         }
+        p {
+          font-weight: 500;
+          color: rgba(59, 59, 59, 0.5);
+        }
+      }
     }
-    }
+  }
+
+  .footer__copyright {
+    height: 4.8rem; //96px
+    background-color: #262626;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
     .footer__copyright {
     

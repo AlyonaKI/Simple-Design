@@ -13,6 +13,7 @@ header {
 
 span {
   color: #bd7048;
+  color: #bd7048;
 }
 
 .header_container {
@@ -30,6 +31,7 @@ span {
   color: black;
 }
 .header_container .header_logo a span:nth-of-type(2) {
+  color: #bd7048;
   color: #bd7048;
 }
 .header_container .header_logo a span:nth-of-type(3) {
@@ -61,11 +63,13 @@ span {
   width: 50%;
   height: 0.1rem;
   background-color: #bd7048;
+  background-color: #bd7048;
   transform: translateX(50%);
   transition: opacity 0.3s ease;
   opacity: 0;
 }
 .header_container .header_nav-list .header_nav-link.active {
+  color: #bd7048;
   color: #bd7048;
   font-weight: 600;
 }
@@ -73,6 +77,7 @@ span {
   opacity: 1;
 }
 .header_container .header_nav-list .header_nav-link:hover {
+  color: #bd7048;
   color: #bd7048;
 }
 .header_container .header_nav-list .header_nav-link:hover::after {
@@ -95,6 +100,7 @@ span {
   color: #3b3b3b;
 }
 .header_container .header_contact .header_contact-info a:hover {
+  color: #bd7048;
   color: #bd7048;
 }
 .header_container .header_contact .header_contact-info p {
@@ -160,6 +166,7 @@ button {
   max-width: 268px;
   height: 74px;
   background-color: #bd7048;
+  background-color: #bd7048;
   border: none;
   color: white;
   border-radius: 100px;
@@ -186,10 +193,14 @@ button a {
   text-decoration: none;
   color: white;
 }
+button .rooms__button a:hover {
+  color: #9fa28a;
 button a:hover {
   color: #9fa28a;
   opacity: 0.8;
 }
+button a {
+  color: #bd7048;
 
 .rooms__price {
   font-size: 20px;
@@ -232,10 +243,19 @@ button a:hover {
   margin-bottom: 8rem;
 }
 
+.works,
+.services,
+.receive,
+.rooms {
+  margin: 0 7rem;
 .works, .services, .receive, .rooms {
   margin: 0 6rem;
 }
 
+.services__title,
+.works__title {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 .services__title {
   margin-bottom: 2.5rem;
   text-align: left;
@@ -348,6 +368,7 @@ button a:hover {
 }
 .footer .footer_container .footer_logo a span:nth-of-type(2) {
   color: #bd7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer_logo a span:nth-of-type(3) {
   font-weight: 400;
@@ -366,12 +387,14 @@ button a:hover {
 }
 .footer .footer_container .footer_nav-list .footer_nav-link.active {
   color: #bd7048;
+  color: #bd7048;
   font-weight: 600;
 }
 .footer .footer_container .footer_nav-list .footer_nav-link.active::after {
   opacity: 1;
 }
 .footer .footer_container .footer_nav-list .footer_nav-link:hover {
+  color: #bd7048;
   color: #bd7048;
 }
 .footer .footer_container .footer-policy {
@@ -384,6 +407,7 @@ button a:hover {
   color: rgba(33, 33, 33, 0.5);
 }
 .footer .footer_container .footer-policy li a:hover {
+  color: #bd7048;
   color: #bd7048;
 }
 .footer .footer_container .footer_contact {
@@ -403,6 +427,7 @@ button a:hover {
   color: #3b3b3b;
 }
 .footer .footer_container .footer_contact .footer_contact-info a:hover {
+  color: #bd7048;
   color: #bd7048;
 }
 .footer .footer_container .footer_contact .footer_contact-info p {

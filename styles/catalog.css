@@ -20,7 +20,7 @@ body {
   color: black;
 }
 .header_container .header_logo a span:nth-of-type(2) {
-  color: #bd7048;
+  color: #BD7048;
 }
 .header_container .header_logo a span:nth-of-type(3) {
   font-weight: 400;
@@ -46,8 +46,7 @@ body {
   margin: 4px 0;
   transition: all 0.3s ease;
 }
-.header_container .burger-menu span:nth-child(1),
-.header_container .burger-menu span:nth-child(3) {
+.header_container .burger-menu span:nth-child(1), .header_container .burger-menu span:nth-child(3) {
   /* Верхняя и нижняя линии */
   width: 25px;
   margin-left: 10px; /* Длина короче средней */
@@ -90,29 +89,22 @@ body {
   left: 25%;
   width: 50%;
   height: 0.1rem;
-  background-color: #bd7048;
-  background-color: #bd7048;
+  background-color: #BD7048;
   transform: translateX(50%);
   transition: opacity 0.3s ease;
   opacity: 0;
 }
 .header_container .header_nav-contact .header_nav-list .header_nav-link.active {
-  color: #bd7048;
+  color: #BD7048;
   font-weight: 600;
 }
-.header_container
-  .header_nav-contact
-  .header_nav-list
-  .header_nav-link.active::after {
+.header_container .header_nav-contact .header_nav-list .header_nav-link.active::after {
   opacity: 1;
 }
 .header_container .header_nav-contact .header_nav-list .header_nav-link:hover {
-  color: #bd7048;
+  color: #BD7048;
 }
-.header_container
-  .header_nav-contact
-  .header_nav-list
-  .header_nav-link:hover::after {
+.header_container .header_nav-contact .header_nav-list .header_nav-link:hover::after {
   opacity: 1;
 }
 .header_container .header_nav-contact .header_contact {
@@ -133,12 +125,8 @@ body {
   font-weight: 600;
   color: #3b3b3b;
 }
-.header_container
-  .header_nav-contact
-  .header_contact
-  .header_contact-info
-  a:hover {
-  color: #bd7048;
+.header_container .header_nav-contact .header_contact .header_contact-info a:hover {
+  color: #BD7048;
 }
 .header_container .header_nav-contact .header_contact .header_contact-info p {
   font-weight: 500;
@@ -164,8 +152,7 @@ body {
   color: black;
 }
 .footer .footer_container .footer_logo a span:nth-of-type(2) {
-  color: #bd7048;
-  color: #bd7048;
+  color: #BD7048;
 }
 .footer .footer_container .footer_logo a span:nth-of-type(3) {
   font-weight: 400;
@@ -183,16 +170,14 @@ body {
   color: rgba(33, 33, 33, 0.5);
 }
 .footer .footer_container .footer_nav-list .footer_nav-link.active {
-  color: #bd7048;
-  color: #bd7048;
+  color: #BD7048;
   font-weight: 600;
 }
 .footer .footer_container .footer_nav-list .footer_nav-link.active::after {
   opacity: 1;
 }
 .footer .footer_container .footer_nav-list .footer_nav-link:hover {
-  color: #bd7048;
-  color: #bd7048;
+  color: #BD7048;
 }
 .footer .footer_container .footer-policy {
   font-weight: 500;
@@ -204,8 +189,7 @@ body {
   color: rgba(33, 33, 33, 0.5);
 }
 .footer .footer_container .footer-policy li a:hover {
-  color: #bd7048;
-  color: #bd7048;
+  color: #BD7048;
 }
 .footer .footer_container .footer_contact {
   display: flex;
@@ -224,8 +208,7 @@ body {
   color: #3b3b3b;
 }
 .footer .footer_container .footer_contact .footer_contact-info a:hover {
-  color: #bd7048;
-  color: #bd7048;
+  color: #BD7048;
 }
 .footer .footer_container .footer_contact .footer_contact-info p {
   font-weight: 500;
@@ -299,31 +282,28 @@ body {
   border: 1px solid white;
   border-radius: 25px;
   font-family: "Montserrat Alternates", sans-serif;
-  color: #bd7048;
-  color: #bd7048;
+  color: #BD7048;
   font-size: 15px;
-  background-color: #fafafa;
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   cursor: pointer;
 }
 .cardButton:hover {
-  background-color: #f14635;
+  background-color: #F14635;
   opacity: 0.8;
   color: white;
 }
 .cardButton a {
   text-decoration: none;
-  color: #bd7048;
+  color: #BD7048;
 }
 .cardButton a:hover {
   color: white;
 }
 
 .cardName-secondary {
-  color: #bd7048;
-  color: #bd7048;
+  color: #BD7048;
 }
 
 .button-container {
@@ -349,13 +329,10 @@ body {
   .cardImage {
     max-width: 15rem;
   }
-  .cardName,
-  .cardButton,
-  .cardButton > a {
+  .cardName, .cardButton, .cardButton > a {
     font-size: 0.8rem;
   }
-  .livingRoom-card0,
-  .livingRoom-card4 {
+  .livingRoom-card0, .livingRoom-card4 {
     display: none;
   }
   .head {
@@ -386,11 +363,7 @@ body {
     flex-direction: column;
     align-items: flex-end;
   }
-  .header_container
-    .header_nav-contact
-    .header_nav
-    .header_nav-list
-    .header_nav-item {
+  .header_container .header_nav-contact .header_nav .header_nav-list .header_nav-item {
     margin: 0;
     margin-bottom: 1rem;
     text-align: center;
@@ -451,4 +424,4 @@ body {
   .footer .footer-policy {
     display: none;
   }
-} /*# sourceMappingURL=catalog.css.map */
+}/*# sourceMappingURL=catalog.css.map */

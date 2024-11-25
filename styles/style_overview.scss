@@ -184,23 +184,17 @@ ul {
   font-size: $main-font-size;
   font-weight: $medium-font-weight;
   margin-top: 4rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.6rem;   
 }
 
 .rooms__title {
   font-size: $subheading-font-size;
   font-weight: $subheading-font-weight;
   color: #262626;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem; 
 }
 
 .rooms__title_text {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 1fr;
-  column-gap: 2rem;
-  align-items: baseline;
-  justify-items: start;
   display: grid;
   grid-template-columns: 2.2fr 3fr;
   grid-template-rows: 1fr;
@@ -210,81 +204,43 @@ ul {
   margin-bottom: 2.5rem;
 
   .rooms__title_text-one {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .rooms__title_text-one {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    font-size: $main-font-size;
-    font-weight: $main-font-weight;
-    color: $text-color;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      font-size: $main-font-size;
+      font-weight: $main-font-weight;
+      color: $text-color;
   }
 
   .rooms__title_text-two {
-    grid-column: 2/3;
-    grid-row: 1/2;
+      list-style: none;
+      grid-column: 2/3;
+      grid-row: 1/2;
   }
-}
-
-button {
-  margin: 20px 0;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-
-  .rooms__button {
-    @include button(
-      $button-text-color,
-      $secondary-font-size,
-      $subheading-font-weight,
-      $primary-color
-    );
-    display: flex;
-    max-width: 9rem;
-    min-width: 170px;
-    height: 57px;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-  }
-
-  a {
-    color: $primary-color;
-  }
-  .rooms__title_text-two {
-    list-style: none;
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
+  
   .rooms__title_text-two span {
-    font-weight: $main-font-weight;
+      font-weight: $main-font-weight;
   }
 
   .rooms__title_text-two h4 {
-    font-size: $main-font-size;
-    font-weight: $medium-font-weight;
-    color: $text-color;
+      font-size: $main-font-size;
+      font-weight: $medium-font-weight;
+      color: $text-color;
   }
 }
 
-button {
-  @include button(
-    $button-text-color,
-    $secondary-font-size,
-    $subheading-font-weight,
-    $primary-color
-  );
-  display: flex;
-  max-width: 9rem;
-  min-width: 182px;
-  height: 57px;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 0.7rem;
-}
+button { @include button($button-text-color,
+      $secondary-font-size,
+      $subheading-font-weight,
+      $primary-color);
+      display: flex;
+      max-width: 9rem;
+      min-width: 182px;
+      height: 57px;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 0.7rem;
+  }
 
 .rooms__price {
   font-size: $main-font-size;
@@ -324,40 +280,21 @@ button {
 .receive__example {
   display: flex;
   align-items: center;
-  display: flex;
-  align-items: center;
   margin-bottom: 8rem;
 }
 
-.works,
-.services,
-.receive,
-.rooms {
-  margin: 0 7rem;
-}
-
-.works,
-.services,
-.receive,
-.rooms {
+.works, .services, .receive, .rooms {
   margin: 0 6rem;
 }
 
-.services__title,
-.works__title {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.services__title {
+  margin-bottom: 2.5rem;
   text-align: left;
-  font-size: 2rem;
+  font-size: 40px;
   font-weight: $secondary-font-weight;
-  .services__title {
-    margin-bottom: 2.5rem;
-    text-align: left;
-    font-size: 40px;
-    font-weight: $secondary-font-weight;
-    color: #262626;
-  }
+  color: #262626;
 }
+
 
 .services__items {
   display: grid;

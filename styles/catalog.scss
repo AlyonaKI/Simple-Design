@@ -377,6 +377,16 @@ $question-background: #FAFAFA;
     display: none;
 }
 
+@media screen and (max-width:768px) {
+
+    .main_container,
+    .header,
+    .footer {
+        max-width: 48rem;
+    }
+
+}
+
 @media screen and (max-width: 440px) {
 
     .main_container,

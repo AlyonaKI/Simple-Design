@@ -545,7 +545,7 @@ body {
     text-align: center;
   }
   body .header_container .header_nav-contact .header_contact .header_contact-info a,
-  body .header_container .header_nav-contact .header_contact .header_contact-info p {
+body .header_container .header_nav-contact .header_contact .header_contact-info p {
     display: none;
   }
   body .header_container .burger-checkbox:checked ~ .header_nav-contact {

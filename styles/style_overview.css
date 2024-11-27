@@ -584,13 +584,13 @@ button a:hover {
     display: none;
   }
   body .works,
-  body .services,
-  body .receive,
-  body .rooms {
+body .services,
+body .receive,
+body .rooms {
     margin: 0 3rem;
   }
   body .services__title,
-  body .works__title {
+body .works__title {
     margin-bottom: 1.5rem;
     font-size: 20px;
   }
@@ -682,8 +682,8 @@ button a:hover {
     grid-row: 4/5;
   }
   body .services__items .services__item-one_link,
-  body .services__items .services__item-two_link,
-  body .services__items .services__item-three_link {
+body .services__items .services__item-two_link,
+body .services__items .services__item-three_link {
     align-self: start;
     padding-left: 1.5rem;
     margin: 0;

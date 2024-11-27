@@ -81,6 +81,9 @@ body {
 .header_container .header_nav-contact .header_nav-list li a {
   color: rgba(0, 0, 0, 0.5);
 }
+.header_container .header_nav-contact .header_nav-list li #nav-link_contact {
+  display: none;
+}
 .header_container .header_nav-contact .header_nav-list .header_nav-link {
   padding-bottom: 0.6rem;
   position: relative;
@@ -539,13 +542,15 @@ body {
     flex-direction: column;
     align-items: flex-end;
   }
+  body .header_container .header_nav-contact .header_nav .header_nav-list #nav-link_contact {
+    display: inline-block;
+  }
   body .header_container .header_nav-contact .header_nav .header_nav-list .header_nav-item {
     margin: 0;
     margin-bottom: 1rem;
     text-align: center;
   }
-  body .header_container .header_nav-contact .header_contact .header_contact-info a,
-  body .header_container .header_nav-contact .header_contact .header_contact-info p {
+  body .header_container .header_nav-contact .header_contact {
     display: none;
   }
   body .header_container .burger-checkbox:checked ~ .header_nav-contact {

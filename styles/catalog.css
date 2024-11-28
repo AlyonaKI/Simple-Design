@@ -77,6 +77,9 @@ body {
 .header_container .header_nav-contact .header_nav-list li a {
   color: rgba(0, 0, 0, 0.5);
 }
+.header_container .header_nav-contact .header_nav-list li #nav-link_contact {
+  display: none;
+}
 .header_container .header_nav-contact .header_nav-list .header_nav-link {
   padding-bottom: 0.6rem;
   position: relative;
@@ -138,7 +141,6 @@ body {
   font-size: 0.75rem;
   font-weight: 600;
   box-shadow: 0 4px 37px 0 rgba(0, 0, 0, 0.05);
-  min-width: 90rem;
 }
 .footer .footer_container {
   padding: 2rem 5rem;
@@ -363,13 +365,15 @@ body {
     flex-direction: column;
     align-items: flex-end;
   }
+  .header_container .header_nav-contact .header_nav .header_nav-list #nav-link_contact {
+    display: inline-block;
+  }
   .header_container .header_nav-contact .header_nav .header_nav-list .header_nav-item {
     margin: 0;
     margin-bottom: 1rem;
     text-align: center;
   }
-  .header_container .header_nav-contact .header_contact .header_contact-info a,
-  .header_container .header_nav-contact .header_contact .header_contact-info p {
+  .header_container .header_nav-contact .header_contact {
     display: none;
   }
   .header_container .burger-checkbox:checked ~ .header_nav-contact {
